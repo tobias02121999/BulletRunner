@@ -8,6 +8,8 @@ iMoveLeft = false;
 iMoveRight = false;
 iMoveUp = false;
 iMoveDown = false;
+iAttack = false;
+iDodge = false;
 
 // Update the input variables based on the given playerID
 switch (_playerId)
@@ -17,5 +19,7 @@ switch (_playerId)
 		iMoveRight = keyboard_check(ord("D"));
 		iMoveUp = keyboard_check(ord("W"));
 		iMoveDown = keyboard_check(ord("S"));
+		iAttack = mouse_check_button_pressed(mb_left);
+		iDodge = keyboard_check_pressed(vk_space);
 		break;
 }

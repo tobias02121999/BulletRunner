@@ -11,6 +11,7 @@ movementSpeedVertical = 0;
 movementDirection = 0;
 facingDirection = 1;
 gunId = 0;
+gunImageIndex = 0;
 
 // Initialize the player statistics variables
 movementSpeed = 0;
