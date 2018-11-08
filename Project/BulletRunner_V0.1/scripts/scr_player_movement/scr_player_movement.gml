@@ -1,10 +1,11 @@
-/// scr_player_movement(movementSpeed, movementThrust, movementFriction, ignoreInput)
+/// scr_player_movement(movementSpeed, movementThrust, movementFriction, applyForce, ignoreInput)
 
 // Store the given arguments in temporary variables
 var _movementSpeed = argument0;
 var _movementThrust = argument1;
 var _movementFriction = argument2;
-var _ignoreInput = argument3;
+var _applyForce = argument3;
+var _ignoreInput = argument4;
 	
 // Run this code if the input is not being ignored
 if (!_ignoreInput)
@@ -27,11 +28,17 @@ if (!_ignoreInput)
 }
 	
 // Set a movementForce if the player is moving
-if (isMoving)
-	scr_force_setForce(_movementSpeed, _movementThrust);
+if (isMoving && _applyForce)
+	scr_force_setForce(_movementSpeed + movementSpeedBoost, _movementThrust);
 	
 // Apply friction to the player
 scr_force_friction(_movementFriction);
 
 // Apply the movementForce
 scr_force_applyForce();
+
+// Decrease the movementSpeedBoost
+if (movementSpeedBoost >= movementSpeedBoostFriction)
+	movementSpeedBoost -= movementSpeedBoostFriction;
+else
+	movementSpeedBoost = 0;
