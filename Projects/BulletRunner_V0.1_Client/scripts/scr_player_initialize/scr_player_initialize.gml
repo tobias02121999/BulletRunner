@@ -13,11 +13,11 @@ facingDirection = 1;
 drawGun = false;
 leapRespondTimer = 10;
 movementSpeedBoost = 0;
-movementSpeedBoostFriction = .025;
-movementDodgeSpeedBoost = 1.75;
-movementLeapSpeedBoost = 2.25;
-movementSlideSpeedBoost = 1;
-movementJumpSpeedBoost = 1.85;
+movementSpeedBoostFriction = .2;
+movementDodgeSpeedBoost = 3.5;
+movementLeapSpeedBoost = 3.5;
+movementSlideSpeedBoost = 3.5;
+movementJumpSpeedBoost = 3.5;
 playerSpawnX = x;
 playerSpawnY = y;
 playerSpawned = false;
@@ -51,13 +51,13 @@ hp = maxHp;
 switch (_playerId)
 {
 	case 0: // Jack character playerID
-		movementSpeed = 2.5;
-		movementThrust = .5;
+		movementSpeed = 3.75;
+		movementThrust = .75;
 		movementFriction = .25;
-		dodgeFriction = .04;
+		dodgeFriction = 0;
 		leapFriction = 0;
-		slideFriction = .035;
-		jumpFriction = -.05;
+		slideFriction = 0;
+		jumpFriction = 0;
 		maxHp = 25;
 		hp = maxHp;
 		break;

@@ -27,11 +27,10 @@ if (playerState == "JUMP")
 
 if (playerState == "DIE")
 {
-	sprite_index = spr_jack_die;
 	image_xscale = bulletHitDirection;
 	drawGun = false;
 }
-	
+
 if (playerState == "DEFAULT")
 {
 	// Set the image xScale based on the players aiming direction

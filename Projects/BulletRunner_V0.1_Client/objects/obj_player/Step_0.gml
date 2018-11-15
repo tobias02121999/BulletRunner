@@ -11,5 +11,6 @@ scr_player_setSpawn();
 if (hp <= 0 && playerState != "DIE")
 {
 	image_index = 0;
+	sprite_index = choose(spr_jack_die, spr_jack_death_heart);
 	playerState = "DIE";
 }

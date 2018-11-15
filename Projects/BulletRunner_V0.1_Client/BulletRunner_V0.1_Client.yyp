@@ -136,6 +136,14 @@
             }
         },
         {
+            "Key": "20d63e92-bdcf-4b9c-9b82-0f6fad444b87",
+            "Value": {
+                "id": "07d38577-7e34-439b-b5fb-7f3df8b8ff45",
+                "resourcePath": "sprites\\spr_jack_death_heart\\spr_jack_death_heart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2120a746-f271-4bd6-84b8-dc3b393d8b34",
             "Value": {
                 "id": "07905f2d-e3e1-493a-9cf2-68122e2a157a",
