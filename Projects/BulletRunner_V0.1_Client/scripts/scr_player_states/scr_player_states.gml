@@ -63,4 +63,10 @@ switch (_playerState)
 		scr_player_movement(movementSpeed, movementThrust, jumpFriction, false, false);
 		scr_player_animation();
 		break;
+		
+	case "DIE": // Die
+		scr_player_getInput(_playerId);
+		scr_player_movement(movementSpeed, movementThrust, movementFriction, false, true);
+		scr_player_animation();
+		break;
 }

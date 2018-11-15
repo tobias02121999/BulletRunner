@@ -8,14 +8,8 @@ scr_buffer_player_main();
 scr_player_setSpawn();
 
 // Die and respawn
-if (hp <= 0)
+if (hp <= 0 && playerState != "DIE")
 {
-	// Respawn the player
-	playerSpawned = false;
-	
-	// Restore the playerHp
-	hp = maxHp;
-	
-	// Add to the matchScore of the other client
-	obj_clientPlayer.matchScore++;
+	image_index = 0;
+	playerState = "DIE";
 }

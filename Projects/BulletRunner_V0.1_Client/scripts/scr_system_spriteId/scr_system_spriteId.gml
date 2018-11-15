@@ -32,6 +32,10 @@ if (_getId)
 		case spr_jack_jump:
 			return 5;
 			break;
+			
+		case spr_jack_die:
+			return 6;
+			break;
 	}
 }
 else
@@ -60,6 +64,10 @@ else
 			
 		case 5:
 			return spr_jack_jump;
+			break;
+			
+		case 6:
+			return spr_jack_die;
 			break;
 	}
 }

@@ -1,6 +1,11 @@
 // If the bullet is from enemy origin
 if (!other.isAllied)
 {
+	if (other.direction >= 90 && other.direction < 270)
+		bulletHitDirection = 1;
+	else
+		bulletHitDirection = -1;
+	
 	// Reduce the playerHealth
 	hp -= other.damage;
 

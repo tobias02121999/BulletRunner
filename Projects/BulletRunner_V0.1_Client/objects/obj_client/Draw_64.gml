@@ -7,7 +7,6 @@ if (object_exists(obj_player))
 {
 	if (matchIsFull && keyboard_check(vk_tab))
 	{
-		draw_set_halign(fa_right);
 		draw_text(16, 16, obj_client.username + ": " + string(obj_client.matchScore));
 		draw_text(16, 32, obj_clientPlayer.username + ": " + string(obj_clientPlayer.matchScore));
 		

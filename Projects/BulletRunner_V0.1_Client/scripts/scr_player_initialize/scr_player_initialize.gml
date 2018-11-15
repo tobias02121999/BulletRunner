@@ -21,6 +21,7 @@ movementJumpSpeedBoost = 1.85;
 playerSpawnX = x;
 playerSpawnY = y;
 playerSpawned = false;
+bulletHitDirection = 1;
 
 // Initialize the player gun variables
 gunId = 0;

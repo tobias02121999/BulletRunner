@@ -27,6 +27,7 @@ switch (_message_id)
 		var dir = buffer_read(_buffer, buffer_u16);
 		var gunId = buffer_read(_buffer, buffer_u8);
 		var gunImgIndex = buffer_read(_buffer, buffer_u8);
+		var drawGun = buffer_read(_buffer, buffer_u8);
 		
 		// Move the client player around
 		obj_clientPlayer.targetX = posX;
@@ -37,6 +38,7 @@ switch (_message_id)
 		obj_clientPlayer.gunDirection = dir;
 		obj_clientPlayer.gunId = gunId;
 		obj_clientPlayer.gunImageIndex = gunImgIndex;
+		obj_clientPlayer.drawGun = drawGun;
 		break;
 		
 	case 2:
@@ -80,5 +82,18 @@ switch (_message_id)
 		// Set the clientPlayers username and matchScore
 		obj_clientPlayer.username = username;
 		obj_client.matchScore = matchScore;
+		break;
+		
+	case 6:
+		// Grab the buffer data
+		var posX = buffer_read(_buffer, buffer_u16);
+		var posY = buffer_read(_buffer, buffer_u16);
+		var spriteId = buffer_read(_buffer, buffer_u8);
+		var xScale = buffer_read(_buffer, buffer_s8);
+		
+		// Spawn the playerCorpse (for the clientPlayer)
+		var obj = instance_create_layer(posX, posY, "Instances", obj_playerCorpse);
+		obj.sprite_index = scr_system_spriteId(false, spriteId);
+		obj.image_xscale = xScale;
 		break;
 }

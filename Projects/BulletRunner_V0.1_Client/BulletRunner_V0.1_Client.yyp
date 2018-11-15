@@ -152,10 +152,26 @@
             }
         },
         {
+            "Key": "2362972d-740f-43d9-bbb3-c9745949f6c3",
+            "Value": {
+                "id": "29669471-b8da-4ef0-abe0-6a7b94f2b569",
+                "resourcePath": "scripts\\scr_buffer_player_corpse\\scr_buffer_player_corpse.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2697409f-a1a3-44af-acb2-5439a95fad7f",
             "Value": {
                 "id": "f62c6dff-21a9-4219-b4b4-7cc4ff3eb5a3",
                 "resourcePath": "sprites\\spr_playerSpawn_1\\spr_playerSpawn_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2a209c1e-968b-443a-8f82-98fbc1f9d0ca",
+            "Value": {
+                "id": "edef518b-94b5-4d95-bf33-6f354dd80168",
+                "resourcePath": "sprites\\spr_jack_die\\spr_jack_die.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -848,6 +864,14 @@
             }
         },
         {
+            "Key": "f8e7d350-ab71-47a6-b201-a9b1e6309f83",
+            "Value": {
+                "id": "28637d8b-cc9f-429b-b336-41e64c59250b",
+                "resourcePath": "objects\\obj_playerCorpse\\obj_playerCorpse.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f92ac389-1cb7-4def-8baa-3587bd93ffe3",
             "Value": {
                 "id": "f83e8b5f-a6c3-4d49-be4e-777fd0a5dd11",
@@ -904,6 +928,7 @@
         "63a2ceff-8289-4696-9fe4-7dfcbe07bcde",
         "c780bc0c-db86-4c74-b515-8e861b1c275b",
         "dbc180c9-78cf-478b-8e9f-5b081c7a0d6e",
+        "2362972d-740f-43d9-bbb3-c9745949f6c3",
         "c2598d52-0b2d-481e-acc3-8cb2a43de922",
         "78b7f45e-8aee-407c-a41d-0b86394d0869"
     ],

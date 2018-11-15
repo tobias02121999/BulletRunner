@@ -24,3 +24,23 @@ if (playerState == "DODGE" or playerState == "LEAP" or playerState == "SLIDE" or
 	
 	playerState = "DEFAULT";
 }
+
+if (playerState == "DIE")
+{
+	// Respawn the player
+	playerSpawned = false;
+	
+	// Restore the playerHp
+	hp = maxHp;
+	
+	// Add to the matchScore of the other client
+	obj_clientPlayer.matchScore++;
+	
+	var obj = instance_create_layer(x, y, "Instances", obj_playerCorpse);
+	obj.sprite_index = sprite_index;
+	obj.image_xscale = image_xscale;
+	
+	scr_buffer_player_corpse();
+	
+	playerState = "DEFAULT";
+}

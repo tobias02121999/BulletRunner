@@ -18,6 +18,7 @@ gunDamage = 0;
 gunReloadDuration = 0;
 gunBulletSprite = spr_bullet;
 gunBulletSpeed = 0;
+drawGun = true;
 
 // Spawn the playerShadow
 var obj = instance_create_layer(0, 0, "Effects", obj_shadow);

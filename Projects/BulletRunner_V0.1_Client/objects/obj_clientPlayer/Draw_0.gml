@@ -7,14 +7,14 @@ else
 	scaleY = 1;
 
 // Draw the gun sprite behind the clientPlayer
-if (gunDirection >= 0 && gunDirection < 180)
+if ((gunDirection >= 0 && gunDirection < 180) && drawGun)
 	draw_sprite_ext(gunSprite, gunImageIndex, x, y, 1, scaleY, gunDirection, c_white, 1);
 
 // Draw the clientPlayer
 draw_self();
 
 // Draw the gun sprite in front of the clientPlayer
-if (!(gunDirection >= 0 && gunDirection < 180))
+if (!(gunDirection >= 0 && gunDirection < 180) && drawGun)
 	draw_sprite_ext(gunSprite, gunImageIndex, x, y, 1, scaleY, gunDirection, c_white, 1);
 
 // Draw the client username above the clientPlayer
