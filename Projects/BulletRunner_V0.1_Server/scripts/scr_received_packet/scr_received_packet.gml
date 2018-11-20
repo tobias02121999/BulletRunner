@@ -131,4 +131,27 @@ switch (_message_id)
 				network_send_packet(socket[i], _buffer, buffer_tell(_buffer)); // Buffer_tell gets the size of the buffer
 		}
 		break;
+		
+	case 7:
+		// Grab the buffer data
+		var ID = buffer_read(_buffer, buffer_u8);
+		var posX = buffer_read(_buffer, buffer_u16);
+		var posY = buffer_read(_buffer, buffer_u16);
+		var desAlarm = buffer_read(_buffer, buffer_u8);
+		
+		/* Send the buffer data to all other clients
+		Write the data to the buffer */
+		buffer_seek(_buffer, buffer_seek_start, 0); // Make sure to start writing at the start of the buffer
+		buffer_write(_buffer, buffer_u8, _message_id); //
+		buffer_write(_buffer, buffer_u16, posX);
+		buffer_write(_buffer, buffer_u16, posY);
+		buffer_write(_buffer, buffer_u8, desAlarm);
+		
+		// Send the buffer to the other clients
+		for (var i = 0; i <= maxClients - 1; i++)
+		{
+			if (i != ID - 1)
+				network_send_packet(socket[i], _buffer, buffer_tell(_buffer)); // Buffer_tell gets the size of the buffer
+		}
+		break;
 }

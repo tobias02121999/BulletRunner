@@ -14,17 +14,29 @@ drawGun = false;
 leapRespondTimer = 10;
 movementSpeedBoost = 0;
 movementSpeedBoostFriction = .2;
-movementDodgeSpeedBoost = 3.5;
+movementDodgeSpeedBoost = 2;
 movementLeapSpeedBoost = 3.5;
-movementSlideSpeedBoost = 3.5;
-movementJumpSpeedBoost = 3.5;
+movementSlideSpeedBoost = 1;
+movementJumpSpeedBoost = 2.5;
 playerSpawnX = x;
 playerSpawnY = y;
 playerSpawned = false;
 bulletHitDirection = 1;
+isBurning = false;
+fireIndex = 0;
 
 // Initialize the player gun variables
-gunId = 0;
+gunId[0] = 0;
+gunId[1] = -1;
+gunId[2] = -1;
+gunId[3] = -1;
+gunId[4] = -1;
+gunId[5] = -1;
+gunId[6] = -1;
+gunId[7] = -1;
+gunId[8] = -1;
+gunSlot = 0;
+gunSlotAmount = 7;
 gunImageIndex = 0;
 gunSpriteIndex = spr_pistol;
 gunBulletAmount = 0;
@@ -40,10 +52,10 @@ gunBulletSpeed = 0;
 movementSpeed = 0;
 movementThrust = 0;
 movementFriction = 0;
-dodgeFriction = 0;
-leapFriction = 0;
-slideFriction = 0;
-jumpFriction = 0;
+dodgeSpeed = 0;
+leapSpeed = 0;
+slideSpeed = 0;
+jumpSpeed = 0;
 maxHp = 1;
 hp = maxHp;
 
@@ -52,12 +64,12 @@ switch (_playerId)
 {
 	case 0: // Jack character playerID
 		movementSpeed = 3.75;
-		movementThrust = .75;
-		movementFriction = .25;
-		dodgeFriction = 0;
-		leapFriction = 0;
-		slideFriction = 0;
-		jumpFriction = 0;
+		movementThrust = 1.25;
+		movementFriction = .5;
+		dodgeSpeed = 3;
+		leapSpeed = 4;
+		slideSpeed = 3.25;
+		jumpSpeed = 2.75;
 		maxHp = 25;
 		hp = maxHp;
 		break;

@@ -1,7 +1,7 @@
 // Initialize the server variables
 var type = network_socket_tcp;
 var port = 8000;
-maxClients = 2;
+maxClients = get_integer("What is the match size (amount of players) ?", "");
 
 // Initialize the sockets
 scr_sockets_initialize();

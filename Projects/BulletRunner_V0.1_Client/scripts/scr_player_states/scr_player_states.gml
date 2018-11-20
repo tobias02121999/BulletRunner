@@ -19,33 +19,37 @@ switch (_playerState)
 		scr_player_dodge();
 		scr_player_slide();
 		scr_player_crouch();
-		scr_system_getGunStats(gunId);
+		scr_player_switchGunSlot();
+		scr_system_getGunStats(gunId[gunSlot]);
 		break;
 		
 	case "DODGE": // The dodge playerState
 		scr_player_getInput(_playerId);
-		scr_player_movement(movementSpeed, movementThrust, dodgeFriction, false, false);
+		scr_player_movement(dodgeSpeed, dodgeSpeed, 0, true, true);
 		scr_player_animation();
 		scr_player_attack();
-		scr_system_getGunStats(gunId);
+		scr_player_switchGunSlot();
+		scr_system_getGunStats(gunId[gunSlot]);
 		break;
 		
 	case "LEAP": // The enhanced dodge playerState
 		scr_player_getInput(_playerId);
-		scr_player_movement(movementSpeed, movementThrust, leapFriction, false, true);
+		scr_player_movement(leapSpeed, leapSpeed, 0, true, true);
 		scr_player_animation();
 		scr_player_attack();
-		scr_system_getGunStats(gunId);
+		scr_player_switchGunSlot();
+		scr_system_getGunStats(gunId[gunSlot]);
 		break;
 		
 	case "SLIDE": // The slide playerState
 		scr_player_getInput(_playerId);
-		scr_player_movement(movementSpeed, movementThrust , slideFriction, false, true);
+		scr_player_movement(slideSpeed, slideSpeed, 0, true, true);
 		scr_player_animation();
 		scr_player_attack();
 		scr_player_dodge();
 		scr_player_crouch();
-		scr_system_getGunStats(gunId);
+		scr_player_switchGunSlot();
+		scr_system_getGunStats(gunId[gunSlot]);
 		break;
 		
 	case "CROUCHING": // The crouching playerState
@@ -55,12 +59,13 @@ switch (_playerState)
 		scr_player_attack();
 		scr_player_crouch();
 		scr_player_jump();
-		scr_system_getGunStats(gunId);
+		scr_player_switchGunSlot();
+		scr_system_getGunStats(gunId[gunSlot]);
 		break;
 		
 	case "JUMP": // The jump playerState
 		scr_player_getInput(_playerId);
-		scr_player_movement(movementSpeed, movementThrust, jumpFriction, false, false);
+		scr_player_movement(jumpSpeed, jumpSpeed, 0, true, true);
 		scr_player_animation();
 		break;
 		

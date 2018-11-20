@@ -15,7 +15,7 @@ buffer_write(_buffer, buffer_u8, scr_system_spriteId(true, 0));
 buffer_write(_buffer, buffer_u8, image_index);
 buffer_write(_buffer, buffer_s8, image_xscale);
 buffer_write(_buffer, buffer_u16, point_direction(x, y, mouse_x, mouse_y));
-buffer_write(_buffer, buffer_u8, gunId);
+buffer_write(_buffer, buffer_u8, gunId[gunSlot]);
 buffer_write(_buffer, buffer_u8, gunImageIndex);
 buffer_write(_buffer, buffer_u8, drawGun);
 

@@ -44,6 +44,18 @@ if (_getId)
 		case spr_jack_back:
 			return 8;
 			break;
+			
+		case spr_pistol_dropped:
+			return 9;
+			break;
+			
+		case spr_shotgun_dropped:
+			return 10;
+			break;
+			
+		case spr_rpg_dropped:
+			return 11;
+			break;
 	}
 }
 else
@@ -84,6 +96,18 @@ else
 			
 		case 8:
 			return spr_jack_back;
+			break;
+			
+		case 9:
+			return spr_pistol_dropped;
+			break;
+			
+		case 10:
+			return spr_shotgun_dropped;
+			break;
+			
+		case 11:
+			return spr_rpg_dropped;
 			break;
 	}
 }

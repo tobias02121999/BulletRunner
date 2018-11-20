@@ -14,6 +14,18 @@ switch (_gunId)
 	gunRange > The time it takes before the bullet gets destroyed
 	*/
 	
+	case -1: // Hand
+		gunSprite = spr_hand;
+		gunResetAlarm = 1;
+		gunBulletAmount = 0;
+		gunAccuracy = 0;
+		gunRange = 0;
+		gunDamage = 0;
+		gunReloadDuration = 0;
+		gunBulletSprite = spr_bullet;
+		gunBulletSpeed = 0;
+		break;
+	
 	case 0: // Pistol
 		gunSprite = spr_pistol;
 		gunResetAlarm = 3;
@@ -34,7 +46,7 @@ switch (_gunId)
 		gunRange = 12;
 		gunDamage = 2;
 		gunReloadDuration = 20;
-		gunBulletSprite = spr_bullet;
+		gunBulletSprite = spr_shell;
 		gunBulletSpeed = 6;
 		break;
 		
@@ -47,6 +59,6 @@ switch (_gunId)
 		gunDamage = 10;
 		gunReloadDuration = 35;
 		gunBulletSprite = spr_rocket;
-		gunBulletSpeed = 5;
+		gunBulletSpeed = 5.5;
 		break;
 }

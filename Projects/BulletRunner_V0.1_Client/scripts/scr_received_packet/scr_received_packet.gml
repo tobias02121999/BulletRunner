@@ -96,4 +96,15 @@ switch (_message_id)
 		obj.sprite_index = scr_system_spriteId(false, spriteId);
 		obj.image_xscale = xScale;
 		break;
+		
+	case 7:
+		// Grab the buffer data
+		var posX = buffer_read(_buffer, buffer_u16);
+		var posY = buffer_read(_buffer, buffer_u16);
+		var desAlarm = buffer_read(_buffer, buffer_u8);
+		
+		// Spawn the fire (caused by an explosion)
+		var obj = instance_create_layer(posX, posY, "Instances", obj_fire);
+		obj.alarm[0] = desAlarm;
+		break;
 }

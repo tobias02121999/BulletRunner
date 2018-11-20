@@ -21,7 +21,7 @@ gunBulletSpeed = 0;
 drawGun = true;
 
 // Spawn the playerShadow
-var obj = instance_create_layer(0, 0, "Effects", obj_shadow);
+var obj = instance_create_layer(0, 0, "Shadows", obj_shadow);
 obj.targetObject = self;
 obj.offsetY = 16;
 

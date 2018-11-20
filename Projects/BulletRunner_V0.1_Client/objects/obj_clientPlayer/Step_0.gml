@@ -14,14 +14,5 @@ else
 x = targetX;
 y = targetY;
 
-// Instantiate a bullet if the client player is shooting
-if (isShooting)
-{
-	// Instantiate a bullet and set its direction to face towards the mouse
-	var obj = instance_create_layer(x, y, "Bullets", obj_bullet);
-	obj.direction = gunDirection;
-	obj.isAllied = false;
-}
-
 // Update the gun variables
 scr_system_getGunStats(gunId);

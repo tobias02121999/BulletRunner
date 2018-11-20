@@ -6,10 +6,12 @@ if (playerState == "DODGE" or playerState == "LEAP" or playerState == "SLIDE" or
 	{
 		case "DODGE":
 			movementSpeedBoost = movementDodgeSpeedBoost;
+			isBurning = false;
 			break;
 			
 		case "LEAP":
 			movementSpeedBoost = movementLeapSpeedBoost;
+			isBurning = false;
 			break;
 			
 		case "SLIDE":
