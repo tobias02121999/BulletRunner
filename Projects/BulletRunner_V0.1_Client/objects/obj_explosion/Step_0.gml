@@ -1,5 +1,5 @@
 // Spawn the fire
-if (!fireSpawned && image_index >= 2)
+if (!fireSpawned && isAllied && image_index >= 2)
 {
 	var posX;
 	var posY;

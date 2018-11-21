@@ -13,6 +13,10 @@ if ((gunDirection >= 0 && gunDirection < 180) && drawGun)
 // Draw the clientPlayer
 draw_self();
 
+// Draw fire on top of the player if they are burning
+if (isBurning)
+	draw_sprite_ext(spr_fireEntity, round(fireIndex), x, y + 6, image_xscale, 1, 0, c_white, .75);
+
 // Draw the gun sprite in front of the clientPlayer
 if (!(gunDirection >= 0 && gunDirection < 180) && drawGun)
 	draw_sprite_ext(gunSprite, gunImageIndex, x, y, 1, scaleY, gunDirection, c_white, 1);

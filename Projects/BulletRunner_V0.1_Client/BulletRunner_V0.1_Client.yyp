@@ -392,14 +392,6 @@
             }
         },
         {
-            "Key": "5437052a-98d0-4ec2-a0d6-d6bf2a924b20",
-            "Value": {
-                "id": "60881be8-fbb5-499a-93d6-c3e456c1e354",
-                "resourcePath": "objects\\obj_system\\obj_system.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "54f33e55-5eb8-41c4-83ba-6df0d70e4113",
             "Value": {
                 "id": "e2030adb-0100-4434-a0b9-531f70aec5f3",
@@ -556,6 +548,14 @@
             "Value": {
                 "id": "b1f74325-6957-473d-9d0a-7e60a277bc1e",
                 "resourcePath": "scripts\\scr_player_switchGunSlot\\scr_player_switchGunSlot.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "79ffc408-3710-4473-b37e-d456c2a96505",
+            "Value": {
+                "id": "b7476255-a69b-4309-a731-431e067cce19",
+                "resourcePath": "scripts\\scr_player_reset\\scr_player_reset.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1008,14 +1008,6 @@
             }
         },
         {
-            "Key": "f8b7e0bb-8771-48ef-a53d-5991ca226e5d",
-            "Value": {
-                "id": "2f1ae686-6910-4dd2-aec0-95ff78f31af6",
-                "resourcePath": "extensions\\prettylight\\prettylight.yy",
-                "resourceType": "GMExtension"
-            }
-        },
-        {
             "Key": "f8e7d350-ab71-47a6-b201-a9b1e6309f83",
             "Value": {
                 "id": "28637d8b-cc9f-429b-b336-41e64c59250b",
@@ -1088,6 +1080,7 @@
         "2abb7d72-592a-4abc-b581-ddd77cb8873a",
         "9fe7b9f9-8e1d-41de-9298-e42f3d763d21",
         "79ea1428-ec0f-4246-be3b-6a0ab04c0a7d",
+        "79ffc408-3710-4473-b37e-d456c2a96505",
         "b54e9aaf-bc98-4500-962b-5b8c6c321e05",
         "5be0c747-0937-4723-9b55-3a3c4020f95e",
         "573970a4-0f67-4ee3-9891-8fe1d732bc3d",

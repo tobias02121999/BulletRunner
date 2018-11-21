@@ -3,6 +3,9 @@
 // Store the given arguments in temporary variables
 var _playerId = argument0;
 
+// Initialize the player input variables
+scr_player_getInput(playerId);
+
 // Initialize the player technical variables
 playerState = "FREEZE";
 isMoving = false;
@@ -24,6 +27,7 @@ playerSpawned = false;
 bulletHitDirection = 1;
 isBurning = false;
 fireIndex = 0;
+fireDamage = .1;
 
 // Initialize the player gun variables
 gunId[0] = 0;

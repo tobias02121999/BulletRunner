@@ -1,5 +1,5 @@
 //
-draw_sprite_ext(spr_UI_border, 0, -1, -1, image_xscale, image_yscale, 0, c_white, 1);
+
 
 var gunSlotsX = 110;
 var gunSlotsDistance = 25;

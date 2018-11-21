@@ -4,6 +4,8 @@ targetY = y;
 isShooting = false;
 username = "";
 matchScore = 0;
+isBurning = false;
+fireIndex = 0;
 
 // Initialize the gun variables
 gunId = 0;

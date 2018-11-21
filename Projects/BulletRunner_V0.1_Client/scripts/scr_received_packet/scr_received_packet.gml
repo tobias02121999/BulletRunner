@@ -28,6 +28,8 @@ switch (_message_id)
 		var gunId = buffer_read(_buffer, buffer_u8);
 		var gunImgIndex = buffer_read(_buffer, buffer_u8);
 		var drawGun = buffer_read(_buffer, buffer_u8);
+		var isBurning = buffer_read(_buffer, buffer_u8);
+		var fireIndex = buffer_read(_buffer, buffer_u8);
 		
 		// Move the client player around
 		obj_clientPlayer.targetX = posX;
@@ -39,6 +41,8 @@ switch (_message_id)
 		obj_clientPlayer.gunId = gunId;
 		obj_clientPlayer.gunImageIndex = gunImgIndex;
 		obj_clientPlayer.drawGun = drawGun;
+		obj_clientPlayer.isBurning = isBurning;
+		obj_clientPlayer.fireIndex = fireIndex;
 		break;
 		
 	case 2:

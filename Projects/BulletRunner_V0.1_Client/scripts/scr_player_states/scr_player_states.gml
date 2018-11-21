@@ -73,5 +73,6 @@ switch (_playerState)
 		scr_player_getInput(_playerId);
 		scr_player_movement(movementSpeed, movementThrust, movementFriction, false, true);
 		scr_player_animation();
+		scr_player_reset();
 		break;
 }

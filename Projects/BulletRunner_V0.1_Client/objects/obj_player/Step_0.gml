@@ -14,3 +14,7 @@ if (hp <= 0 && playerState != "DIE")
 	sprite_index = choose(spr_jack_die, spr_jack_death_heart);
 	playerState = "DIE";
 }
+
+// Take fire damage over time
+if (isBurning)
+	hp -= fireDamage;

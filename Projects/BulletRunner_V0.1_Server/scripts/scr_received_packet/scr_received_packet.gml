@@ -21,6 +21,8 @@ switch (_message_id)
 		var gunId = buffer_read(_buffer, buffer_u8);
 		var gunImgIndex = buffer_read(_buffer, buffer_u8);
 		var drawGun = buffer_read(_buffer, buffer_u8);
+		var isBurning = buffer_read(_buffer, buffer_u8);
+		var fireIndex = buffer_read(_buffer, buffer_u8);
 		
 		/* Send the buffer data to all other clients
 		Write the data to the buffer */
@@ -35,6 +37,8 @@ switch (_message_id)
 		buffer_write(_buffer, buffer_u8, gunId);
 		buffer_write(_buffer, buffer_u8, gunImgIndex);
 		buffer_write(_buffer, buffer_u8, drawGun);
+		buffer_write(_buffer, buffer_u8, isBurning);
+		buffer_write(_buffer, buffer_u8, fireIndex);
 
 		// Send the buffer to the other clients
 		for (var i = 0; i <= maxClients - 1; i++)

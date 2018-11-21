@@ -32,9 +32,6 @@ if (playerState == "DIE")
 	// Respawn the player
 	playerSpawned = false;
 	
-	// Restore the playerHp
-	hp = maxHp;
-	
 	// Add to the matchScore of the other client
 	obj_clientPlayer.matchScore++;
 	

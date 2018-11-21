@@ -15,6 +15,7 @@ iCrouch = false;
 iJump = false;
 iGunSlotNext = false;
 iGunSlotPrevious = false;
+iAim = false;
 
 // Update the input variables based on the given playerID
 switch (_playerId)
@@ -31,5 +32,6 @@ switch (_playerId)
 		iJump = keyboard_check_pressed(vk_space);
 		iGunSlotNext = mouse_wheel_up();
 		iGunSlotPrevious = mouse_wheel_down();
+		iAim = mouse_check_button(mb_right);
 		break;
 }

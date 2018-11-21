@@ -1,5 +1,5 @@
 // If the bullet is from enemy origin
-if (!other.isAllied)
+if (!other.isAllied && playerState != "DIE")
 {
 	if (other.direction >= 90 && other.direction < 270)
 		bulletHitDirection = 1;
