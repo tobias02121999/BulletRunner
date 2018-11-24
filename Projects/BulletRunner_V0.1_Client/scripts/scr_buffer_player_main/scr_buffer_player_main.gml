@@ -20,6 +20,8 @@ buffer_write(_buffer, buffer_u8, gunImageIndex);
 buffer_write(_buffer, buffer_u8, drawGun);
 buffer_write(_buffer, buffer_u8, isBurning);
 buffer_write(_buffer, buffer_u8, fireIndex);
+buffer_write(_buffer, buffer_u16, mouse_x);
+buffer_write(_buffer, buffer_u16, mouse_y);
 
 // Send the buffer to the server
 network_send_packet(_socket, _buffer, buffer_tell(_buffer)); // Buffer_tell gets the size of the buffer

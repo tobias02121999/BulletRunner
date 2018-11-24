@@ -28,6 +28,9 @@ bulletHitDirection = 1;
 isBurning = false;
 fireIndex = 0;
 fireDamage = .1;
+reelPositionX = 0;
+reelPositionY = 0;
+reelSpeed = 8;
 
 // Initialize the player gun variables
 gunId[0] = 0;
@@ -51,6 +54,8 @@ gunDamage = 0;
 gunReloadDuration = 0;
 gunBulletSprite = spr_bullet;
 gunBulletSpeed = 0;
+gunBulletExplodeOnDestroy = false;
+gunBulletDestroyOnMousePosition = false;
 
 // Initialize the player statistics variables
 movementSpeed = 0;
@@ -67,7 +72,7 @@ hp = maxHp;
 switch (_playerId)
 {
 	case 0: // Jack character playerID
-		movementSpeed = 3.75;
+		movementSpeed = 4;
 		movementThrust = 1.25;
 		movementFriction = .5;
 		dodgeSpeed = 3;

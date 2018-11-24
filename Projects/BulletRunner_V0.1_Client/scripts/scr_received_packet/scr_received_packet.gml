@@ -30,6 +30,8 @@ switch (_message_id)
 		var drawGun = buffer_read(_buffer, buffer_u8);
 		var isBurning = buffer_read(_buffer, buffer_u8);
 		var fireIndex = buffer_read(_buffer, buffer_u8);
+		var mousePosX = buffer_read(_buffer, buffer_u16);
+		var mousePosY = buffer_read(_buffer, buffer_u16);
 		
 		// Move the client player around
 		obj_clientPlayer.targetX = posX;
@@ -43,6 +45,8 @@ switch (_message_id)
 		obj_clientPlayer.drawGun = drawGun;
 		obj_clientPlayer.isBurning = isBurning;
 		obj_clientPlayer.fireIndex = fireIndex;
+		obj_clientPlayer.mousePositionX = mousePosX;
+		obj_clientPlayer.mousePositionY = mousePosY;
 		break;
 		
 	case 2:
@@ -59,6 +63,12 @@ switch (_message_id)
 			obj.damage = obj_clientPlayer.gunDamage;
 			obj.sprite_index = obj_clientPlayer.gunBulletSprite;
 			obj.speed = obj_clientPlayer.gunBulletSpeed;
+			obj.explodeOnDestroy = obj_clientPlayer.gunBulletExplodeOnDestroy;
+			obj.destroyOnMousePosition = obj_clientPlayer.gunBulletDestroyOnMousePosition;
+			obj.mousePositionX = obj_clientPlayer.mousePositionX;
+			obj.mousePositionY = obj_clientPlayer.mousePositionY;
+			obj.drawRope = obj_clientPlayer.gunBulletDrawRope;
+			obj.reelOnDestroy = obj_clientPlayer.gunBulletReelOnDestroy;
 		}
 		break;
 		

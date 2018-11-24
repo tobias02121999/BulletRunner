@@ -25,13 +25,19 @@ if (playerState == "JUMP")
 	drawGun = false;
 }
 
+if (playerState == "REEL")
+{
+	sprite_index = spr_jack_slide;
+	drawGun = true;
+}
+
 if (playerState == "DIE")
 {
 	image_xscale = bulletHitDirection;
 	drawGun = false;
 }
 
-if (playerState == "DEFAULT")
+if (playerState == "DEFAULT" or playerState == "REEL")
 {
 	// Set the image xScale based on the players aiming direction
 	var dir = point_direction(x, y, mouse_x, mouse_y);
@@ -40,15 +46,18 @@ if (playerState == "DEFAULT")
 	else
 		image_xscale = 1;
 	
-	if (isMoving)
+	if (playerState == "DEFAULT")
 	{
-		if (facingDirection == image_xscale)
-			sprite_index = spr_jack_run;
+		if (isMoving)
+		{
+			if (facingDirection == image_xscale)
+				sprite_index = spr_jack_run;
+			else
+				sprite_index = spr_jack_back;
+		}
 		else
-			sprite_index = spr_jack_back;
+			sprite_index = spr_jack_idle;
 	}
-	else
-		sprite_index = spr_jack_idle;
 		
 	drawGun = true;
 }

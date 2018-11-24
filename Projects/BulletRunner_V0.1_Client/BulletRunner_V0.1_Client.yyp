@@ -280,6 +280,14 @@
             }
         },
         {
+            "Key": "3c944d2b-f6e8-42ad-b0e5-3d1ca6c05019",
+            "Value": {
+                "id": "69974473-1e0a-4cee-b275-e7f94e905d58",
+                "resourcePath": "sprites\\spr_grapplingGun\\spr_grapplingGun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3cfb35d6-acb4-4a90-bba4-7cfc71a49bae",
             "Value": {
                 "id": "a76941a4-c4f6-40d9-9b9e-aa2573d3a36f",
@@ -341,6 +349,14 @@
                 "id": "aba4f191-994a-465d-9797-4131abdfd923",
                 "resourcePath": "tilesets\\ts_structures\\ts_structures.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "4c2c200c-54c0-4b94-baa5-2b54a10175dc",
+            "Value": {
+                "id": "e037df1b-852c-475c-b5b6-2564451a8c3a",
+                "resourcePath": "sprites\\spr_grapplingGun_dropped\\spr_grapplingGun_dropped.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -816,6 +832,14 @@
             }
         },
         {
+            "Key": "c3f7b95e-80f9-4c42-94f5-a99f7071b1e4",
+            "Value": {
+                "id": "57b8f4bf-b00e-4a27-947d-563c7240bf75",
+                "resourcePath": "sprites\\spr_hook\\spr_hook.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c780bc0c-db86-4c74-b515-8e861b1c275b",
             "Value": {
                 "id": "2a29fc08-691d-42ef-864f-5508d3241f65",
@@ -1008,6 +1032,14 @@
             }
         },
         {
+            "Key": "f5dd62a5-c8d9-47b6-955b-d4bc4677b4b6",
+            "Value": {
+                "id": "94d135c6-c1f8-48e5-ba72-f83a899f979a",
+                "resourcePath": "scripts\\scr_player_reel\\scr_player_reel.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f8e7d350-ab71-47a6-b201-a9b1e6309f83",
             "Value": {
                 "id": "28637d8b-cc9f-429b-b336-41e64c59250b",
@@ -1081,6 +1113,7 @@
         "9fe7b9f9-8e1d-41de-9298-e42f3d763d21",
         "79ea1428-ec0f-4246-be3b-6a0ab04c0a7d",
         "79ffc408-3710-4473-b37e-d456c2a96505",
+        "f5dd62a5-c8d9-47b6-955b-d4bc4677b4b6",
         "b54e9aaf-bc98-4500-962b-5b8c6c321e05",
         "5be0c747-0937-4723-9b55-3a3c4020f95e",
         "573970a4-0f67-4ee3-9891-8fe1d732bc3d",

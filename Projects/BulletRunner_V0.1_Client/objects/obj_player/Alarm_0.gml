@@ -1,4 +1,4 @@
 ///@description gunImageIndex reset alarm
 
-// Reset the gunImageIndex to the default image
-gunImageIndex = 0;
+// Set the gunImageIndex to the reloading image
+gunImageIndex = 2;

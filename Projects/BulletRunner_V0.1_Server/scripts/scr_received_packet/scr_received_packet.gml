@@ -23,6 +23,8 @@ switch (_message_id)
 		var drawGun = buffer_read(_buffer, buffer_u8);
 		var isBurning = buffer_read(_buffer, buffer_u8);
 		var fireIndex = buffer_read(_buffer, buffer_u8);
+		var mousePosX = buffer_read(_buffer, buffer_u16);
+		var mousePosY = buffer_read(_buffer, buffer_u16);
 		
 		/* Send the buffer data to all other clients
 		Write the data to the buffer */
@@ -39,7 +41,9 @@ switch (_message_id)
 		buffer_write(_buffer, buffer_u8, drawGun);
 		buffer_write(_buffer, buffer_u8, isBurning);
 		buffer_write(_buffer, buffer_u8, fireIndex);
-
+		buffer_write(_buffer, buffer_u16, mousePosX);
+		buffer_write(_buffer, buffer_u16, mousePosY);
+		
 		// Send the buffer to the other clients
 		for (var i = 0; i <= maxClients - 1; i++)
 		{

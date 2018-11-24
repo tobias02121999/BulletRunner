@@ -6,6 +6,8 @@ username = "";
 matchScore = 0;
 isBurning = false;
 fireIndex = 0;
+mousePositionX = 0;
+mousePositionY = 0;
 
 // Initialize the gun variables
 gunId = 0;
@@ -20,6 +22,10 @@ gunDamage = 0;
 gunReloadDuration = 0;
 gunBulletSprite = spr_bullet;
 gunBulletSpeed = 0;
+gunBulletExplodeOnDestroy = false;
+gunBulletDestroyOnMousePosition = false;
+gunBulletDrawRope = false;
+gunBulletReelOnDestroy = false;
 drawGun = true;
 
 // Spawn the playerShadow

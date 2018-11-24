@@ -1,5 +1,9 @@
 /// scr_player_draw()
 
+// Draw the reel rope towards the reel point
+if (playerState == "REEL")
+	draw_line_width_color(obj_player.x, obj_player.y, reelPositionX, reelPositionY, 1, c_dkgray, c_dkgray);
+
 // Calculate the direction and scale for the gun sprite
 var dir = point_direction(x, y, mouse_x, mouse_y);
 var scaleY;

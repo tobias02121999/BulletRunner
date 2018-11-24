@@ -56,6 +56,10 @@ if (_getId)
 		case spr_rpg_dropped:
 			return 11;
 			break;
+			
+		case spr_grapplingGun_dropped:
+			return 12;
+			break;
 	}
 }
 else
@@ -108,6 +112,10 @@ else
 			
 		case 11:
 			return spr_rpg_dropped;
+			break;
+			
+		case 12:
+			return spr_grapplingGun_dropped;
 			break;
 	}
 }

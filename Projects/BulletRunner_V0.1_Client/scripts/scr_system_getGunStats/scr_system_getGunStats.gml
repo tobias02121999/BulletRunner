@@ -23,7 +23,12 @@ switch (_gunId)
 		gunDamage = 0;
 		gunReloadDuration = 0;
 		gunBulletSprite = spr_bullet;
-		gunBulletSpeed = 0;
+		gunBulletExplodeOnDestroy = false;
+		gunBulletDestroyOnPosition = false;
+		gunBulletDestroyPositionX = 0;
+		gunBulletDestroyPositionY = 0;
+		gunBulletDrawRope = false;
+		gunBulletReelOnDestroy = false;
 		break;
 	
 	case 0: // Pistol
@@ -36,6 +41,10 @@ switch (_gunId)
 		gunReloadDuration = 5;
 		gunBulletSprite = spr_bullet;
 		gunBulletSpeed = 7.5;
+		gunBulletExplodeOnDestroy = false;
+		gunBulletDestroyOnPosition = false;
+		gunBulletDrawRope = false;
+		gunBulletReelOnDestroy = false;
 		break;
 		
 	case 1: // Shotgun
@@ -48,6 +57,10 @@ switch (_gunId)
 		gunReloadDuration = 20;
 		gunBulletSprite = spr_shell;
 		gunBulletSpeed = 6;
+		gunBulletExplodeOnDestroy = false;
+		gunBulletDestroyOnPosition = false;
+		gunBulletDrawRope = false;
+		gunBulletReelOnDestroy = false;
 		break;
 		
 	case 2: // RPG
@@ -60,5 +73,25 @@ switch (_gunId)
 		gunReloadDuration = 35;
 		gunBulletSprite = spr_rocket;
 		gunBulletSpeed = 5.5;
+		gunBulletExplodeOnDestroy = true;
+		gunBulletDestroyOnMousePosition = true;
+		gunBulletDrawRope = false;
+		gunBulletReelOnDestroy = false;
+		break;
+		
+	case 3: // Grappling Gun
+		gunSprite = spr_grapplingGun;
+		gunResetAlarm = 3;
+		gunBulletAmount = 1;
+		gunAccuracy = 0;
+		gunRange = 12;
+		gunDamage = 0;
+		gunReloadDuration = 40;
+		gunBulletSprite = spr_hook;
+		gunBulletSpeed = 16;
+		gunBulletExplodeOnDestroy = false;
+		gunBulletDestroyOnMousePosition = false;
+		gunBulletDrawRope = true;
+		gunBulletReelOnDestroy = true;
 		break;
 }

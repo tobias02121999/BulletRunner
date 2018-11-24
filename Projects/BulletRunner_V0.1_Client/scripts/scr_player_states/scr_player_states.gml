@@ -75,4 +75,13 @@ switch (_playerState)
 		scr_player_animation();
 		scr_player_reset();
 		break;
+		
+	case "REEL": // Reeling towards a reelPoint
+		scr_player_getInput(_playerId);
+		scr_player_animation();
+		scr_player_attack();
+		scr_player_switchGunSlot();
+		scr_player_reel(reelSpeed);
+		scr_system_getGunStats(gunId[gunSlot]);
+		break;
 }
