@@ -31,9 +31,10 @@ fireDamage = .1;
 reelPositionX = 0;
 reelPositionY = 0;
 reelSpeed = 8;
+isSlowed = false;
 
 // Initialize the player gun variables
-gunId[0] = 0;
+gunId[0] = 5;
 gunId[1] = -1;
 gunId[2] = -1;
 gunId[3] = -1;
@@ -52,10 +53,15 @@ gunAccuracy = 0;
 gunRange = 0;
 gunDamage = 0;
 gunReloadDuration = 0;
+gunIsAutomatic = false;
 gunBulletSprite = spr_bullet;
 gunBulletSpeed = 0;
 gunBulletExplodeOnDestroy = false;
 gunBulletDestroyOnMousePosition = false;
+gunBulletReelOnDestroy = false;
+gunBulletApplySlowing = false;
+gunBulletSlowingDuration = 0;
+gunBulletRicochet = false;
 
 // Initialize the player statistics variables
 movementSpeed = 0;

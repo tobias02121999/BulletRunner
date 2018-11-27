@@ -69,6 +69,9 @@ switch (_message_id)
 			obj.mousePositionY = obj_clientPlayer.mousePositionY;
 			obj.drawRope = obj_clientPlayer.gunBulletDrawRope;
 			obj.reelOnDestroy = obj_clientPlayer.gunBulletReelOnDestroy;
+			obj.applySlowing = obj_clientPlayer.gunBulletApplySlowing;
+			obj.slowingDuration = obj_clientPlayer.gunBulletSlowingDuration;
+			obj.ricochet = obj_clientPlayer.gunBulletRicochet;
 		}
 		break;
 		

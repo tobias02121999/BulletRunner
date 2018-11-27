@@ -8,4 +8,7 @@ mousePositionX = mouse_x;
 mousePositionY = mouse_y;
 drawRope = false;
 reelOnDestroy = false;
+applySlowing = true;
+slowingDuration = 0;
+ricochet = false;
 speed = 7.5;

@@ -28,8 +28,14 @@ if (!_ignoreInput)
 }
 	
 // Set a movementForce if the player is moving
+var spd;
+if (isSlowed)
+	spd = _movementSpeed / 2;
+else
+	spd = _movementSpeed;
+
 if (isMoving && _applyForce)
-	scr_force_setForce(_movementSpeed + movementSpeedBoost, _movementThrust);
+	scr_force_setForce(spd + movementSpeedBoost, _movementThrust);
 	
 // Apply friction to the player
 scr_force_friction(_movementFriction);

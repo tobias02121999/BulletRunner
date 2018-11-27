@@ -392,6 +392,14 @@
             }
         },
         {
+            "Key": "535fbe5d-883a-42ca-92bf-0da4c41847b7",
+            "Value": {
+                "id": "cf0363e8-1237-41e0-94f2-6681187f4c91",
+                "resourcePath": "sprites\\spr_ricochetGun\\spr_ricochetGun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "53c91954-a0a8-4dbe-a3b0-4c8db811b195",
             "Value": {
                 "id": "781d9871-d69b-4336-9d88-988a0af6acf6",
@@ -800,6 +808,14 @@
             }
         },
         {
+            "Key": "b962d19e-15e7-4258-935f-a0cfef4a7ebe",
+            "Value": {
+                "id": "77ab8eb7-866d-4bdf-ad10-a4fb0214de81",
+                "resourcePath": "sprites\\spr_plasmaRifle_dropped\\spr_plasmaRifle_dropped.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b9f10d69-3cde-433b-aa0b-2ab8cd228faf",
             "Value": {
                 "id": "41852af0-999a-40c2-8e61-100f54cbc62d",
@@ -896,6 +912,14 @@
             }
         },
         {
+            "Key": "d3f3f41b-095e-4770-bcdc-73cd03a071b2",
+            "Value": {
+                "id": "eb041945-48d6-4c02-bc82-8c9fb29ee885",
+                "resourcePath": "sprites\\spr_plasma\\spr_plasma.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d50854a8-1bcf-4e2a-a5f0-a12ce3e17315",
             "Value": {
                 "id": "74d73591-0e2a-48bd-affe-142fc433de61",
@@ -917,6 +941,14 @@
                 "id": "4c5ef68d-14bf-41ab-bb16-9b78c40a61d6",
                 "resourcePath": "views\\d8258f44-3feb-4fd8-a127-361508f9bc56.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "db17f822-f1c9-4aa8-9196-0b4caf734cca",
+            "Value": {
+                "id": "bfc8c277-023c-469a-9112-0963c0cdb15a",
+                "resourcePath": "sprites\\spr_ricochetGun_dropped\\spr_ricochetGun_dropped.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -957,6 +989,22 @@
                 "id": "a6e6fe2d-0cf3-47e2-ba5b-2c875d61ce73",
                 "resourcePath": "scripts\\scr_player_getInput\\scr_player_getInput.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e24015fd-46f5-4850-8498-6ad1d32b4d5f",
+            "Value": {
+                "id": "28d2b9bd-aa12-4c1f-ba96-7c8e85156db4",
+                "resourcePath": "sprites\\spr_plasmaRifle\\spr_plasmaRifle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e5841d41-1d5f-4f2f-abc9-92b79b6fe6d7",
+            "Value": {
+                "id": "e782a641-2e7c-4d07-a588-f7770d5ccc0b",
+                "resourcePath": "sprites\\spr_arrow\\spr_arrow.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

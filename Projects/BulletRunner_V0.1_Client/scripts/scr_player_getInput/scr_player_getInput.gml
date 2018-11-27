@@ -26,6 +26,7 @@ switch (_playerId)
 		iMoveUp = keyboard_check(ord("W"));
 		iMoveDown = keyboard_check(ord("S"));
 		iAttack = mouse_check_button_pressed(mb_left);
+		iAttackHold = mouse_check_button(mb_left);
 		iDodge = keyboard_check_pressed(vk_space);
 		iSlide = keyboard_check_pressed(vk_shift);
 		iCrouch = keyboard_check(vk_control);

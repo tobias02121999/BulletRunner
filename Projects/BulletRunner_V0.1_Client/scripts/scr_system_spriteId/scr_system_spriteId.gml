@@ -60,6 +60,14 @@ if (_getId)
 		case spr_grapplingGun_dropped:
 			return 12;
 			break;
+			
+		case spr_plasmaRifle_dropped:
+			return 13;
+			break;
+			
+		case spr_ricochetGun_dropped:
+			return 14;
+			break;
 	}
 }
 else
@@ -116,6 +124,14 @@ else
 			
 		case 12:
 			return spr_grapplingGun_dropped;
+			break;
+			
+		case 13:
+			return spr_plasmaRifle_dropped;
+			break;
+			
+		case 14:
+			return spr_ricochetGun_dropped;
 			break;
 	}
 }
