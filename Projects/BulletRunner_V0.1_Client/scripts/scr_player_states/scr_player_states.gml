@@ -11,6 +11,13 @@ switch (_playerState)
 		scr_player_matchStart();
 		break;
 	
+	case "HITPAUSE": // The hitPause playerState
+		scr_player_getInput(_playerId);
+		scr_player_animation();
+		scr_player_movement(0, 0, 1000, false, false);
+		scr_player_hitPause();
+		break;
+	
 	case "DEFAULT": // The default playerState
 		scr_player_getInput(_playerId);
 		scr_player_movement(movementSpeed, movementThrust, movementFriction, true, false);

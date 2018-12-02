@@ -14,10 +14,9 @@ if (obj_client.clientId == 1 && obj_client.matchIsFull) // Let the first connect
 	{
 		// Instantiate the weapon (with the correct gunId)
 		var obj = instance_create_layer(x, y, "Items", obj_weapon);
-		var rand = round(random_range(0, 4));
-		obj.gunId = rand;
+		obj.gunId = gunId;
 		
 		// Buffer
-		scr_buffer_weaponSpawn_spawn(rand);
+		scr_buffer_weaponSpawn_spawn(gunId);
 	}
 }

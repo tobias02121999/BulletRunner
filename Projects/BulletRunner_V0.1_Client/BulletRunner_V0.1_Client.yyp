@@ -40,6 +40,14 @@
             }
         },
         {
+            "Key": "0557d226-0e2c-4e3b-bd46-c531b65d11d5",
+            "Value": {
+                "id": "cd7c4998-583e-40d9-aaa9-4af114fcc57e",
+                "resourcePath": "sprites\\spr_blood\\spr_blood.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "07d81d30-bb01-4dce-9cef-c608c62c7282",
             "Value": {
                 "id": "6ffa0e57-69d1-4c85-b73d-4a23d7ac12ac",
@@ -213,6 +221,14 @@
                 "id": "28e7a005-7d9b-4bf4-9a73-3048f919bede",
                 "resourcePath": "scripts\\scr_player_setSpawn\\scr_player_setSpawn.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2bd48822-5a43-4bf4-b4c8-5f2a8ea2f0a6",
+            "Value": {
+                "id": "b831e941-fa47-4a89-931b-ed1341807084",
+                "resourcePath": "objects\\obj_weaponSpawn_plasmaRifle\\obj_weaponSpawn_plasmaRifle.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -424,6 +440,14 @@
             }
         },
         {
+            "Key": "563d4160-9b61-48f3-9d7b-fbb3261e7ceb",
+            "Value": {
+                "id": "27c6ef93-cb7d-4b3c-a0b8-cb59eeb83a1a",
+                "resourcePath": "objects\\obj_weaponSpawn_shotgun\\obj_weaponSpawn_shotgun.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "573970a4-0f67-4ee3-9891-8fe1d732bc3d",
             "Value": {
                 "id": "fc1ffeb9-1ab4-4f07-8ced-1d7ecac09963",
@@ -476,6 +500,14 @@
             "Value": {
                 "id": "a1f2e099-fea8-417b-bea5-a4904c2f0a8f",
                 "resourcePath": "objects\\obj_button_connect\\obj_button_connect.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "648f3849-d05c-415d-9719-7d9a54805bf4",
+            "Value": {
+                "id": "09994f19-edb8-4de9-ad61-e0d76e2725eb",
+                "resourcePath": "objects\\obj_weaponSpawn_pistol\\obj_weaponSpawn_pistol.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -656,6 +688,14 @@
             }
         },
         {
+            "Key": "8a668449-47cd-4c01-8845-ebfe6fc78556",
+            "Value": {
+                "id": "12a04a6e-aa8d-4ada-a57a-908fec455a04",
+                "resourcePath": "objects\\obj_weaponSpawn_grapplingGun\\obj_weaponSpawn_grapplingGun.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "91ceb54c-4af5-4294-9ac5-774c0274aa6f",
             "Value": {
                 "id": "dc245aa2-1770-4de8-bfac-91af6cf8ba57",
@@ -677,6 +717,14 @@
                 "id": "75da7c75-591b-41b5-a530-0b189f4ff9b7",
                 "resourcePath": "scripts\\scr_player_states\\scr_player_states.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "99ac7e92-518b-4d86-822b-f5987fee37e7",
+            "Value": {
+                "id": "d728466a-bdff-4d23-bfa6-30731c345abb",
+                "resourcePath": "objects\\obj_blood\\obj_blood.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -832,6 +880,14 @@
             }
         },
         {
+            "Key": "c1c27958-b080-4619-9ba6-eea13201a1c4",
+            "Value": {
+                "id": "8604d851-0ff0-4586-a316-016e9174ee71",
+                "resourcePath": "scripts\\scr_player_hitPause\\scr_player_hitPause.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c2598d52-0b2d-481e-acc3-8cb2a43de922",
             "Value": {
                 "id": "ca15caea-3846-4bbd-ab11-3fab6ef05749",
@@ -909,6 +965,14 @@
                 "id": "775cdeb5-8573-46ac-be75-66efd0aae34c",
                 "resourcePath": "objects\\obj_client\\obj_client.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d1f88483-45f7-49b8-b8fd-cec960a1aa00",
+            "Value": {
+                "id": "14961897-a815-4603-ae2a-19b6d21e9c0e",
+                "resourcePath": "sprites\\spr_machineGun\\spr_machineGun.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1016,6 +1080,14 @@
             }
         },
         {
+            "Key": "e911ac78-271d-4a1c-912d-91c621447d1b",
+            "Value": {
+                "id": "bd1776e8-f645-474d-910e-0d97e57b9975",
+                "resourcePath": "objects\\obj_weaponSpawn_rpg\\obj_weaponSpawn_rpg.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e9ddf647-8b54-4631-9241-c21055dd5e0b",
             "Value": {
                 "id": "e9f061ef-4bf3-4198-a550-8d0d6edc8956",
@@ -1029,6 +1101,14 @@
                 "id": "5c16da5e-a117-448d-81fe-4c9053baa301",
                 "resourcePath": "objects\\obj_bullet\\obj_bullet.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ea98837c-0a06-4a65-810f-1e1799cd9286",
+            "Value": {
+                "id": "f9322ae5-2e54-4226-a00d-2a9210c256dc",
+                "resourcePath": "sprites\\spr_machineGun_dropped\\spr_machineGun_dropped.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1112,6 +1192,14 @@
             }
         },
         {
+            "Key": "fb0a23f2-de8e-4fb9-9c79-e1b055283914",
+            "Value": {
+                "id": "d9175ed5-e9f1-40e7-8d49-f7ef2a00f72c",
+                "resourcePath": "objects\\obj_weaponSpawn_ricochetGun\\obj_weaponSpawn_ricochetGun.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fbbe560c-b3e1-42bc-90f0-86d66bcf7fd2",
             "Value": {
                 "id": "6a2ab3b7-3478-4696-8e22-44ca797c06b8",
@@ -1162,6 +1250,7 @@
         "79ea1428-ec0f-4246-be3b-6a0ab04c0a7d",
         "79ffc408-3710-4473-b37e-d456c2a96505",
         "f5dd62a5-c8d9-47b6-955b-d4bc4677b4b6",
+        "c1c27958-b080-4619-9ba6-eea13201a1c4",
         "b54e9aaf-bc98-4500-962b-5b8c6c321e05",
         "5be0c747-0937-4723-9b55-3a3c4020f95e",
         "573970a4-0f67-4ee3-9891-8fe1d732bc3d",

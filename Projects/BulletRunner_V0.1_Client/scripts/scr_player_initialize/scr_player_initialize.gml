@@ -34,7 +34,7 @@ reelSpeed = 8;
 isSlowed = false;
 
 // Initialize the player gun variables
-gunId[0] = 5;
+gunId[0] = 0;
 gunId[1] = -1;
 gunId[2] = -1;
 gunId[3] = -1;

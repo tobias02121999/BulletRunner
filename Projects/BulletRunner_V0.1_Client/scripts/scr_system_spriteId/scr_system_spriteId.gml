@@ -45,7 +45,7 @@ if (_getId)
 			return 8;
 			break;
 			
-		case spr_pistol_dropped:
+		case spr_machineGun_dropped:
 			return 9;
 			break;
 			
@@ -111,7 +111,7 @@ else
 			break;
 			
 		case 9:
-			return spr_pistol_dropped;
+			return spr_machineGun_dropped;
 			break;
 			
 		case 10:

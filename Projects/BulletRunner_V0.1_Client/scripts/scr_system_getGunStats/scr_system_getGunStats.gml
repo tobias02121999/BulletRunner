@@ -31,15 +31,15 @@ switch (_gunId)
 		gunBulletApplySlowing = false;
 		break;
 	
-	case 0: // Pistol
-		gunSprite = spr_pistol;
-		gunResetAlarm = 3;
+	case 0: // Machine Gun
+		gunSprite = spr_machineGun;
+		gunResetAlarm = 2;
 		gunBulletAmount = 1;
-		gunAccuracy = 5;
+		gunAccuracy = 22;
 		gunRange = 16;
 		gunDamage = 3;
-		gunReloadDuration = 5;
-		gunIsAutomatic = false;
+		gunReloadDuration = 4;
+		gunIsAutomatic = true;
 		gunBulletSprite = spr_bullet;
 		gunBulletSpeed = 7.5;
 		gunBulletExplodeOnDestroy = false;
@@ -112,7 +112,7 @@ switch (_gunId)
 		gunResetAlarm = 2;
 		gunBulletAmount = 1;
 		gunAccuracy = 5;
-		gunRange = 24;
+		gunRange = 32;
 		gunDamage = 3;
 		gunReloadDuration = 3;
 		gunIsAutomatic = true;
@@ -130,12 +130,12 @@ switch (_gunId)
 	case 5: // Ricochet Gun
 		gunSprite = spr_ricochetGun;
 		gunResetAlarm = 3;
-		gunBulletAmount = 1;
-		gunAccuracy = 5;
+		gunBulletAmount = 4;
+		gunAccuracy = 8.5;
 		gunRange = 32;
 		gunDamage = 3;
 		gunReloadDuration = 5;
-		gunIsAutomatic = true;
+		gunIsAutomatic = false;
 		gunBulletSprite = spr_arrow;
 		gunBulletSpeed = 10;
 		gunBulletExplodeOnDestroy = false;

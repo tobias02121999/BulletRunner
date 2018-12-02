@@ -5,26 +5,28 @@ if (playerState == "DODGE" or playerState == "LEAP" or playerState == "SLIDE" or
 	switch (playerState)
 	{
 		case "DODGE":
-			movementSpeedBoost = movementDodgeSpeedBoost;
 			isBurning = false;
+			alarm[4] = 6;
+			playerState = "HITPAUSE";
 			break;
 			
 		case "LEAP":
 			movementSpeedBoost = movementLeapSpeedBoost;
 			isBurning = false;
+			playerState = "DEFAULT";
 			break;
 			
 		case "SLIDE":
 			movementSpeedBoost = movementSlideSpeedBoost;
 			alarm[1] = leapRespondTimer;
+			playerState = "DEFAULT";
 			break;
 			
 		case "JUMP":
 			movementSpeedBoost = movementJumpSpeedBoost;
+			playerState = "DEFAULT";
 			break;
 	}
-	
-	playerState = "DEFAULT";
 }
 
 if (playerState == "DIE")

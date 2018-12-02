@@ -37,6 +37,12 @@ if (playerState == "DIE")
 	drawGun = false;
 }
 
+if (playerState == "HITPAUSE")
+{
+	sprite_index = spr_jack_crouch;
+	drawGun = false;
+}
+
 if (playerState == "DEFAULT" or playerState == "REEL")
 {
 	// Set the image xScale based on the players aiming direction
