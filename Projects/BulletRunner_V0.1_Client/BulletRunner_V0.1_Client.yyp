@@ -528,6 +528,14 @@
             }
         },
         {
+            "Key": "65f276eb-f9be-4c46-b308-027905dba47a",
+            "Value": {
+                "id": "3a2a4c53-316c-4fe6-8f27-08fd94be8200",
+                "resourcePath": "objects\\obj_bloodSpat\\obj_bloodSpat.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "66f07214-5eb7-4a91-aee9-5835a779d8c8",
             "Value": {
                 "id": "5aa9eba9-ca26-40a9-afa6-294d5dada1ec",
@@ -637,6 +645,14 @@
                 "id": "ab33f1b6-4cd0-4d75-b682-124ace161e6d",
                 "resourcePath": "scripts\\scr_system_getGunStats\\scr_system_getGunStats.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7bfbae1e-c3ff-4d93-acac-4f2153b76f28",
+            "Value": {
+                "id": "66fea5c1-bf74-4d08-b24f-810f0b1fb667",
+                "resourcePath": "sprites\\spr_bloodSpat\\spr_bloodSpat.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

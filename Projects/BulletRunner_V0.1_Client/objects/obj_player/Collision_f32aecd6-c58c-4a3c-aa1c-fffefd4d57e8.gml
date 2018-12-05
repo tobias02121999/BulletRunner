@@ -5,6 +5,14 @@ if (!other.isAllied && playerState != "DIE")
 		bulletHitDirection = 1;
 	else
 		bulletHitDirection = -1;
+		
+	// Spawn the blood objects
+	var rand = round(random_range(1, 5));
+	for (var i = 0; i < rand; i++)
+	{
+		var int = instance_create_layer(x, y, "Effects", obj_blood);
+		int.direction = other.direction + random_range(-25, 25);
+	}
 	
 	// Reduce the playerHealth
 	hp -= other.damage;
