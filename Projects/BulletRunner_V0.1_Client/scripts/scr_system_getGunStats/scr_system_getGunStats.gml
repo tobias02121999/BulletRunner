@@ -113,7 +113,7 @@ switch (_gunId)
 		gunBulletAmount = 1;
 		gunAccuracy = 5;
 		gunRange = 32;
-		gunDamage = 3;
+		gunDamage = 2;
 		gunReloadDuration = 3;
 		gunIsAutomatic = true;
 		gunBulletSprite = spr_plasma;
@@ -123,14 +123,14 @@ switch (_gunId)
 		gunBulletDrawRope = false;
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = true;
-		gunBulletSlowingDuration = 25;
+		gunBulletSlowingDuration = 5;
 		gunBulletRicochet = false;
 		break;
 		
 	case 5: // Ricochet Gun
 		gunSprite = spr_ricochetGun;
 		gunResetAlarm = 3;
-		gunBulletAmount = 4;
+		gunBulletAmount = 2;
 		gunAccuracy = 8.5;
 		gunRange = 32;
 		gunDamage = 3;
