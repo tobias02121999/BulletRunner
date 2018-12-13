@@ -43,10 +43,22 @@ gunId[5] = -1;
 gunId[6] = -1;
 gunId[7] = -1;
 gunId[8] = -1;
+
+gunDurability[0] = 100;
+gunDurability[1] = 0;
+gunDurability[2] = 0;
+gunDurability[3] = 0;
+gunDurability[4] = 0;
+gunDurability[5] = 0;
+gunDurability[6] = 0;
+gunDurability[7] = 0;
+gunDurability[8] = 0;
+
+gunDurabilityMax = 0;
 gunSlot = 0;
 gunSlotAmount = 7;
 gunImageIndex = 0;
-gunSpriteIndex = spr_pistol;
+gunSpriteIndex = spr_machineGun;
 gunBulletAmount = 0;
 gunResetAlarm = 0;
 gunAccuracy = 0;

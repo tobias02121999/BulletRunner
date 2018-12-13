@@ -34,4 +34,7 @@ if (((iAttack && !gunIsAutomatic) or (iAttackHold && gunIsAutomatic)) && alarm[2
 	
 	// Set the gun reload alarm
 	alarm[2] = gunReloadDuration;
+	
+	// Decrease the durability value of the currently equiped gun
+	gunDurability[gunSlot] -= 1;
 }

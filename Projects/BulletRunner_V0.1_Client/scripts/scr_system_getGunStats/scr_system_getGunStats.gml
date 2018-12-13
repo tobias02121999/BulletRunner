@@ -29,6 +29,7 @@ switch (_gunId)
 		gunBulletDrawRope = false;
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = false;
+		gunDurabilityMax = 0;
 		break;
 	
 	case 0: // Machine Gun
@@ -48,6 +49,7 @@ switch (_gunId)
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = false;
+		gunDurabilityMax = 100;
 		break;
 		
 	case 1: // Shotgun
@@ -67,6 +69,7 @@ switch (_gunId)
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = false;
+		gunDurabilityMax = 50;
 		break;
 		
 	case 2: // RPG
@@ -86,6 +89,7 @@ switch (_gunId)
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = false;
+		gunDurabilityMax = 100;
 		break;
 		
 	case 3: // Grappling Gun
@@ -105,6 +109,7 @@ switch (_gunId)
 		gunBulletReelOnDestroy = true;
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = false;
+		gunDurabilityMax = 100;
 		break;
 		
 	case 4: // Plasma Rifle
@@ -125,6 +130,7 @@ switch (_gunId)
 		gunBulletApplySlowing = true;
 		gunBulletSlowingDuration = 5;
 		gunBulletRicochet = false;
+		gunDurabilityMax = 100;
 		break;
 		
 	case 5: // Ricochet Gun
@@ -144,5 +150,6 @@ switch (_gunId)
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = true;
+		gunDurabilityMax = 100;
 		break;
 }

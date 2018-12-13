@@ -1,5 +1,5 @@
 // Lerp towards a position behind the player
-var dir = point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y);
+var dir = point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y) + directionOffset;
 var targetX = obj_player.x + lengthdir_x(-distanceFromPlayer, dir);
 var targetY = obj_player.y + lengthdir_y(-distanceFromPlayer, dir);
 var dist = distance_to_point(targetX, targetY);

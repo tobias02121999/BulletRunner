@@ -18,3 +18,7 @@ if (hp <= 0 && playerState != "DIE")
 // Take fire damage over time
 if (isBurning)
 	hp -= fireDamage;
+
+// 
+if (gunDurability[gunSlot] <= 0)
+	gunId[gunSlot] = -1;
