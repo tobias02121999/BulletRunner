@@ -43,35 +43,44 @@ if (playerState == "HITPAUSE")
 	drawGun = false;
 }
 
-if (playerState == "DEFAULT" or playerState == "REEL")
+if (playerState == "FALL")
 {
-	// Set the image xScale based on the players aiming direction
-	var dir = point_direction(x, y, mouse_x, mouse_y);
-	if (dir >= 90 && dir < 270)
-		image_xscale = -1;
-	else
-		image_xscale = 1;
-	
-	if (playerState == "DEFAULT")
-	{
-		if (isMoving)
-		{
-			if (facingDirection == image_xscale)
-				sprite_index = spr_jack_run;
-			else
-				sprite_index = spr_jack_back;
-		}
-		else
-			sprite_index = spr_jack_idle;
-	}
-		
-	drawGun = true;
+	sprite_index = spr_jack_fall;
+	drawGun = false;
 }
-else
+
+if (playerState != "FALL")
 {
-	if (playerState != "DIE")
+	if (playerState == "DEFAULT" or playerState == "REEL")
 	{
-		// Set the image xScale based on the players facing direction
-		image_xscale = facingDirection;
+		// Set the image xScale based on the players aiming direction
+		var dir = point_direction(x, y, mouse_x, mouse_y);
+		if (dir >= 90 && dir < 270)
+			image_xscale = -1;
+		else
+			image_xscale = 1;
+	
+		if (playerState == "DEFAULT")
+		{
+			if (isMoving)
+			{
+				if (facingDirection == image_xscale)
+					sprite_index = spr_jack_run;
+				else
+					sprite_index = spr_jack_back;
+			}
+			else
+				sprite_index = spr_jack_idle;
+		}
+		
+		drawGun = true;
+	}
+	else
+	{
+		if (playerState != "DIE")
+		{
+			// Set the image xScale based on the players facing direction
+			image_xscale = facingDirection;
+		}
 	}
 }

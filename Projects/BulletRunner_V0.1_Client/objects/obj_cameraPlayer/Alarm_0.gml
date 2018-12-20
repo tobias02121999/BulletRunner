@@ -1,0 +1,1 @@
+// The camera shake alarm

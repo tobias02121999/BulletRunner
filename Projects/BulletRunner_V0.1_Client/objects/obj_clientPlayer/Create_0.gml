@@ -37,7 +37,7 @@ obj.targetObject = self;
 obj.offsetY = 16;
 
 // Spawn the playerReflection
-var obj = instance_create_layer(0, 0, "Reflections", obj_shadow);
+var obj = instance_create_layer(0, 0, "Reflections", obj_reflection);
 obj.targetObject = self;
 obj.offsetY = 16;
 obj.color = c_white;

@@ -8,12 +8,20 @@ if (playerState == "DODGE" or playerState == "LEAP" or playerState == "SLIDE" or
 			isBurning = false;
 			alarm[4] = 6;
 			playerState = "HITPAUSE";
+			
+			// Make the playerCamera shake
+			obj_cameraPlayer.shakeIntensity = 2.5;
+			obj_cameraPlayer.alarm[0] = 5;
 			break;
 			
 		case "LEAP":
 			movementSpeedBoost = movementLeapSpeedBoost;
 			isBurning = false;
 			playerState = "DEFAULT";
+			
+			// Make the playerCamera shake
+			obj_cameraPlayer.shakeIntensity = 2.5;
+			obj_cameraPlayer.alarm[0] = 5;
 			break;
 			
 		case "SLIDE":
@@ -25,6 +33,10 @@ if (playerState == "DODGE" or playerState == "LEAP" or playerState == "SLIDE" or
 		case "JUMP":
 			movementSpeedBoost = movementJumpSpeedBoost;
 			playerState = "DEFAULT";
+			
+			// Make the playerCamera shake
+			obj_cameraPlayer.shakeIntensity = 2.5;
+			obj_cameraPlayer.alarm[0] = 5;
 			break;
 	}
 }
@@ -34,14 +46,11 @@ if (playerState == "DIE")
 	// Respawn the player
 	playerSpawned = false;
 	
-	// Add to the matchScore of the other client
-	obj_clientPlayer.matchScore++;
-	
 	var obj = instance_create_layer(x, y, "Instances", obj_playerCorpse);
 	obj.sprite_index = sprite_index;
 	obj.image_xscale = image_xscale;
 	
-	scr_buffer_player_corpse();
+	scr_buffer_player_death();
 	
 	playerState = "DEFAULT";
 }

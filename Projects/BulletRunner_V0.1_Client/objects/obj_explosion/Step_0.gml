@@ -19,3 +19,7 @@ if (!fireSpawned && isAllied && image_index >= 2)
 	
 	fireSpawned = true;
 }
+
+// Make the playerCamera shake
+obj_cameraPlayer.shakeIntensity = shakeIntensity;
+obj_cameraPlayer.alarm[0] = 5;

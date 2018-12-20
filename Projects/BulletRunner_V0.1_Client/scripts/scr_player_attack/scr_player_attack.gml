@@ -1,7 +1,7 @@
 /// scr_player_attack()
 
 // Make the player attack if the corresponding input has been given and the weapon has reloaded
-if (((iAttack && !gunIsAutomatic) or (iAttackHold && gunIsAutomatic)) && alarm[2] <= 0)
+if (((iAttack && !gunIsAutomatic) or (iAttackHold && gunIsAutomatic)) && alarm[2] <= 0 && gunDurability[gunSlot] > 0)
 {
 	// Set the gunImageIndex to match the shooting image
 	gunImageIndex = 1;
@@ -28,6 +28,10 @@ if (((iAttack && !gunIsAutomatic) or (iAttackHold && gunIsAutomatic)) && alarm[2
 		// Buffer
 		scr_buffer_player_attack(obj.direction);
 	}
+	
+	// Make the camera shake
+	obj_cameraPlayer.shakeIntensity = gunShakeIntensity;
+	obj_cameraPlayer.alarm[0] = 5;
 
 	// Set the gun reset alarm
 	alarm[0] = gunResetAlarm;

@@ -132,6 +132,18 @@ switch (_message_id)
 		buffer_write(_buffer, buffer_u8, spriteId);
 		buffer_write(_buffer, buffer_s8, xScale);
 		
+		// Add to the score of the other socket
+		switch (ID)
+		{
+			case 1:
+				socketScore[1]++;
+				break;
+				
+			case 2:
+				socketScore[0]++;
+				break;
+		}
+		
 		// Send the buffer to the other clients
 		for (var i = 0; i <= maxClients - 1; i++)
 		{

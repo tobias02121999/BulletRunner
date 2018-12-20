@@ -2,6 +2,7 @@
 var type = network_socket_tcp;
 var port = 8000;
 maxClients = get_integer("What is the match size (amount of players) ?", "");
+matchGoal = get_integer("What is the match score goal?", "");
 
 // Initialize the sockets
 scr_sockets_initialize();

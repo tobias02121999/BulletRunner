@@ -17,3 +17,8 @@ if (hpPercentage > .5 && hpPercentage <= .85)
 
 if (hpPercentage > .85)
 	image_index = 2;
+	
+if (hpPercentage <= 0)
+	visible = false;
+else
+	visible = true;

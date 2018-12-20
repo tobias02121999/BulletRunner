@@ -30,6 +30,7 @@ switch (_gunId)
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = false;
 		gunDurabilityMax = 0;
+		gunShakeIntensity = 0;
 		break;
 	
 	case 0: // Machine Gun
@@ -50,26 +51,28 @@ switch (_gunId)
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = false;
 		gunDurabilityMax = 100;
+		gunShakeIntensity = 2;
 		break;
 		
 	case 1: // Shotgun
 		gunSprite = spr_shotgun;
 		gunResetAlarm = 6;
 		gunBulletAmount = 5;
-		gunAccuracy = 12.5;
-		gunRange = 12;
-		gunDamage = 2;
+		gunAccuracy = 7.5;
+		gunRange = 6;
+		gunDamage = 2.25;
 		gunReloadDuration = 20;
 		gunIsAutomatic = false;
 		gunBulletSprite = spr_shell;
-		gunBulletSpeed = 6;
+		gunBulletSpeed = 10;
 		gunBulletExplodeOnDestroy = false;
 		gunBulletDestroyOnMousePosition = false;
 		gunBulletDrawRope = false;
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = false;
-		gunDurabilityMax = 50;
+		gunDurabilityMax = 15;
+		gunShakeIntensity = 6;
 		break;
 		
 	case 2: // RPG
@@ -84,12 +87,13 @@ switch (_gunId)
 		gunBulletSprite = spr_rocket;
 		gunBulletSpeed = 5.5;
 		gunBulletExplodeOnDestroy = true;
-		gunBulletDestroyOnMousePosition = true;
+		gunBulletDestroyOnMousePosition = false;
 		gunBulletDrawRope = false;
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = false;
-		gunDurabilityMax = 100;
+		gunDurabilityMax = 10;
+		gunShakeIntensity = 12;
 		break;
 		
 	case 3: // Grappling Gun
@@ -109,7 +113,8 @@ switch (_gunId)
 		gunBulletReelOnDestroy = true;
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = false;
-		gunDurabilityMax = 100;
+		gunDurabilityMax = 3;
+		gunShakeIntensity = 3;
 		break;
 		
 	case 4: // Plasma Rifle
@@ -130,7 +135,8 @@ switch (_gunId)
 		gunBulletApplySlowing = true;
 		gunBulletSlowingDuration = 5;
 		gunBulletRicochet = false;
-		gunDurabilityMax = 100;
+		gunDurabilityMax = 75;
+		gunShakeIntensity = 3;
 		break;
 		
 	case 5: // Ricochet Gun
@@ -140,7 +146,7 @@ switch (_gunId)
 		gunAccuracy = 8.5;
 		gunRange = 32;
 		gunDamage = 3;
-		gunReloadDuration = 5;
+		gunReloadDuration = 10;
 		gunIsAutomatic = false;
 		gunBulletSprite = spr_arrow;
 		gunBulletSpeed = 10;
@@ -150,6 +156,7 @@ switch (_gunId)
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = true;
-		gunDurabilityMax = 100;
+		gunDurabilityMax = 35;
+		gunShakeIntensity = 4;
 		break;
 }

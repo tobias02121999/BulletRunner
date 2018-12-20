@@ -34,3 +34,16 @@ var projectionMatrix = matrix_build_projection_ortho(camWidth * camZoom, camHeig
 
 camera_set_view_mat(cam, viewMatrix);
 camera_set_proj_mat(cam, projectionMatrix);
+
+// Reduce the gunSlot alpha over time
+if (gunSlotAlpha >= gunSlotFadeSpeed)
+	gunSlotAlpha -= gunSlotFadeSpeed;
+else
+	gunSlotAlpha = 0;
+	
+// Shake the camera round
+if (alarm[0] > 0)
+{
+	x += random_range(-shakeIntensity, shakeIntensity);
+	y += random_range(-shakeIntensity, shakeIntensity);
+}

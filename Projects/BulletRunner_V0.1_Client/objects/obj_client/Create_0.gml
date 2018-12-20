@@ -20,7 +20,7 @@ if (connection < 0)
 	instance_destroy();
 }
 else
-	room_goto(rm_game);	
+	room_goto(rm_level_dungeon);
 
 // Initialize the buffer (to store data in)
 var size = 1024;
@@ -33,6 +33,8 @@ clientId = 0;
 
 // Keep track of if the match is full
 matchIsFull = false;
+matchIsWon = false;
+winner = 0;
 
 // Store the clients username
 username = "";

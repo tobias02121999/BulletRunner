@@ -15,7 +15,12 @@ else
 
 // Draw the gun sprite behind the player
 if (dir >= 0 && dir < 180 && drawGun)
-	draw_sprite_ext(gunSprite, gunImageIndex, x, y, 1, scaleY, dir, c_white, 1);
+{
+	if (gunDurability[gunSlot] > 0)
+		draw_sprite_ext(gunSprite, gunImageIndex, x, y, 1, scaleY, dir, c_white, 1);
+	else
+		draw_sprite_ext(spr_hand, gunImageIndex, x, y, 1, scaleY, dir, c_white, 1);
+}
 
 // Draw the player
 draw_self();
@@ -33,7 +38,12 @@ if (isBurning)
 
 // Draw the gun sprite in front of the player
 if (!(dir >= 0 && dir < 180) && drawGun)
-	draw_sprite_ext(gunSprite, gunImageIndex, x, y, 1, scaleY, dir, c_white, 1);
+{
+	if (gunDurability[gunSlot] > 0)
+		draw_sprite_ext(gunSprite, gunImageIndex, x, y, 1, scaleY, dir, c_white, 1);
+	else
+		draw_sprite_ext(spr_hand, gunImageIndex, x, y, 1, scaleY, dir, c_white, 1);
+}
 
 // Draw the client username above the player
 draw_set_halign(fa_center);

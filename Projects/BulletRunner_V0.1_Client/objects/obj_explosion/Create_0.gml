@@ -6,3 +6,4 @@ fireAmount = round(random_range(2, 5));
 fireMaxOffset = 5;
 fireSpawned = false;
 isAllied = false;
+shakeIntensity = 18;

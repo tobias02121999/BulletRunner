@@ -9,7 +9,7 @@ move_towards_point(targetX, targetY, dist * lerpPercentage);
 // Set 
 var durabilityPercentage = obj_player.gunDurability[obj_player.gunSlot] / obj_player.gunDurabilityMax;
 
-if (durabilityPercentage <= .125)
+if (durabilityPercentage > 0 && durabilityPercentage <= .125)
 	image_index = 0;
 
 if (durabilityPercentage > .125 && durabilityPercentage <= .250)
@@ -32,9 +32,11 @@ if (durabilityPercentage > .750 && durabilityPercentage <= .875)
 
 if (durabilityPercentage > .875 && durabilityPercentage <= 1)
 	image_index = 7;
-
-//
-if (obj_player.gunDurability[obj_player.gunSlot] <= 0)
+	
+if (durabilityPercentage <= 0)
+{
+	image_index = 8;
 	visible = false;
+}
 else
 	visible = true;

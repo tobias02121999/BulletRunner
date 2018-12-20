@@ -91,4 +91,10 @@ switch (_playerState)
 		scr_player_reel(reelSpeed);
 		scr_system_getGunStats(gunId[gunSlot]);
 		break;
+		
+	case "FALL": // 
+		scr_player_animation();
+		scr_player_fall(.05);
+		scr_player_reset();
+		break;
 }

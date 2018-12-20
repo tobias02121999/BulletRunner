@@ -32,31 +32,27 @@ reelPositionX = 0;
 reelPositionY = 0;
 reelSpeed = 8;
 isSlowed = false;
+portalTimer = 0;
 
 // Initialize the player gun variables
-gunId[0] = 0;
-gunId[1] = -1;
-gunId[2] = -1;
-gunId[3] = -1;
-gunId[4] = -1;
-gunId[5] = -1;
-gunId[6] = -1;
-gunId[7] = -1;
-gunId[8] = -1;
+gunId[0] = 1;
+gunId[1] = 0;
+gunId[2] = 3;
+gunId[3] = 5;
+gunId[4] = 4;
+gunId[5] = 2;
 
-gunDurability[0] = 100;
-gunDurability[1] = 0;
+gunDurability[0] = 0;
+gunDurability[1] = 100;
 gunDurability[2] = 0;
 gunDurability[3] = 0;
 gunDurability[4] = 0;
 gunDurability[5] = 0;
-gunDurability[6] = 0;
-gunDurability[7] = 0;
-gunDurability[8] = 0;
 
 gunDurabilityMax = 0;
-gunSlot = 0;
-gunSlotAmount = 7;
+
+gunSlot = 1;
+gunSlotAmount = 6;
 gunImageIndex = 0;
 gunSpriteIndex = spr_machineGun;
 gunBulletAmount = 0;
@@ -74,6 +70,7 @@ gunBulletReelOnDestroy = false;
 gunBulletApplySlowing = false;
 gunBulletSlowingDuration = 0;
 gunBulletRicochet = false;
+gunShakeIntensity = 0;
 
 // Initialize the player statistics variables
 movementSpeed = 0;
@@ -93,10 +90,10 @@ switch (_playerId)
 		movementSpeed = 4;
 		movementThrust = 1.25;
 		movementFriction = .5;
-		dodgeSpeed = 3;
+		dodgeSpeed = 2.75;
 		leapSpeed = 4;
 		slideSpeed = 3.25;
-		jumpSpeed = 2.75;
+		jumpSpeed = 3.25;
 		maxHp = 25;
 		hp = maxHp;
 		break;

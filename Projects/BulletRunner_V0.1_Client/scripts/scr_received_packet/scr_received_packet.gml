@@ -54,25 +54,22 @@ switch (_message_id)
 		var dir = buffer_read(_buffer, buffer_u16);
 	
 		// Instantiate a bullet
-		for (var i = 0; i < obj_clientPlayer.gunBulletAmount; i++)
-		{
-			var obj = instance_create_layer(obj_clientPlayer.x, obj_clientPlayer.y, "Bullets", obj_bullet);
-			obj.direction = dir;
-			obj.range = obj_clientPlayer.gunRange;
-			obj.isAllied = false;
-			obj.damage = obj_clientPlayer.gunDamage;
-			obj.sprite_index = obj_clientPlayer.gunBulletSprite;
-			obj.speed = obj_clientPlayer.gunBulletSpeed;
-			obj.explodeOnDestroy = obj_clientPlayer.gunBulletExplodeOnDestroy;
-			obj.destroyOnMousePosition = obj_clientPlayer.gunBulletDestroyOnMousePosition;
-			obj.mousePositionX = obj_clientPlayer.mousePositionX;
-			obj.mousePositionY = obj_clientPlayer.mousePositionY;
-			obj.drawRope = obj_clientPlayer.gunBulletDrawRope;
-			obj.reelOnDestroy = obj_clientPlayer.gunBulletReelOnDestroy;
-			obj.applySlowing = obj_clientPlayer.gunBulletApplySlowing;
-			obj.slowingDuration = obj_clientPlayer.gunBulletSlowingDuration;
-			obj.ricochet = obj_clientPlayer.gunBulletRicochet;
-		}
+		var obj = instance_create_layer(obj_clientPlayer.x, obj_clientPlayer.y, "Bullets", obj_bullet);
+		obj.direction = dir;
+		obj.range = obj_clientPlayer.gunRange;
+		obj.isAllied = false;
+		obj.damage = obj_clientPlayer.gunDamage;
+		obj.sprite_index = obj_clientPlayer.gunBulletSprite;
+		obj.speed = obj_clientPlayer.gunBulletSpeed;
+		obj.explodeOnDestroy = obj_clientPlayer.gunBulletExplodeOnDestroy;
+		obj.destroyOnMousePosition = obj_clientPlayer.gunBulletDestroyOnMousePosition;
+		obj.mousePositionX = obj_clientPlayer.mousePositionX;
+		obj.mousePositionY = obj_clientPlayer.mousePositionY;
+		obj.drawRope = obj_clientPlayer.gunBulletDrawRope;
+		obj.reelOnDestroy = obj_clientPlayer.gunBulletReelOnDestroy;
+		obj.applySlowing = obj_clientPlayer.gunBulletApplySlowing;
+		obj.slowingDuration = obj_clientPlayer.gunBulletSlowingDuration;
+		obj.ricochet = obj_clientPlayer.gunBulletRicochet;
 		break;
 		
 	case 3:
@@ -94,11 +91,9 @@ switch (_message_id)
 	case 5:
 		// Grab the buffer data
 		var username = buffer_read(_buffer, buffer_string);
-		var matchScore = buffer_read(_buffer, buffer_u8);
 		
 		// Set the clientPlayers username and matchScore
 		obj_clientPlayer.username = username;
-		obj_client.matchScore = matchScore;
 		break;
 		
 	case 6:
@@ -123,5 +118,32 @@ switch (_message_id)
 		// Spawn the fire (caused by an explosion)
 		var obj = instance_create_layer(posX, posY, "Instances", obj_fire);
 		obj.alarm[0] = desAlarm;
+		break;
+		
+	case 8:
+		// Grab the buffer data
+		var score0 = buffer_read(_buffer, buffer_u16);
+		var score1 = buffer_read(_buffer, buffer_u16);
+		
+		switch (obj_client.clientId)
+		{
+			case 1:
+				obj_client.matchScore = score0;
+				obj_clientPlayer.matchScore = score1;
+				break;
+				
+			case 2:
+				obj_client.matchScore = score1;
+				obj_clientPlayer.matchScore = score0;
+				break;
+		}
+		break;
+		
+	case 9:
+		// Grab the buffer data
+		var winner = buffer_read(_buffer, buffer_u8);
+		obj_player.playerState = "FREEZE";
+		obj_client.matchIsWon = true;
+		obj_client.winner = winner;
 		break;
 }

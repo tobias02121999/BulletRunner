@@ -18,7 +18,11 @@ if (hp <= 0 && playerState != "DIE")
 // Take fire damage over time
 if (isBurning)
 	hp -= fireDamage;
+	
+// Decrease the portalTimer
+portalTimer--;
 
-// 
+/*
 if (gunDurability[gunSlot] <= 0)
 	gunId[gunSlot] = -1;
+*/
