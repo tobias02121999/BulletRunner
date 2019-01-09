@@ -1,6 +1,6 @@
 // Initialize the blood variables
-speed = random_range(.5, 10);
-speedReduction = speed * 0.1;
+speed = random_range(.5, 20);
+speedReduction = speed * random_range(.05, .15);
 scaleReduction = .025;
 
 // Randomize the image index

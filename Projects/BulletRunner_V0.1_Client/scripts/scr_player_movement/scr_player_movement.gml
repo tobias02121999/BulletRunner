@@ -48,3 +48,9 @@ if (movementSpeedBoost >= movementSpeedBoostFriction)
 	movementSpeedBoost -= movementSpeedBoostFriction;
 else
 	movementSpeedBoost = 0;
+	
+if (playerState != "DAB" && keyboard_check_pressed(vk_f1))
+{
+	image_index = 0;
+	playerState = "DAB";
+}

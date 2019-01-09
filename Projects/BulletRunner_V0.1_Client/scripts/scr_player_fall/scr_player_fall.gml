@@ -14,6 +14,5 @@ if (abs(image_xscale) <= .1)
 
 	// Respawn the player
 	playerSpawned = false;
-	scr_buffer_player_death();
 	playerState = "DEFAULT";
 }

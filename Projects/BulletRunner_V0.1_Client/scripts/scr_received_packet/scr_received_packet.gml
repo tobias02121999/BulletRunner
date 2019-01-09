@@ -24,6 +24,7 @@ switch (_message_id)
 		var spriteId = buffer_read(_buffer, buffer_u8);
 		var img = buffer_read(_buffer, buffer_u8);
 		var xScale = buffer_read(_buffer, buffer_s8);
+		var yScale = buffer_read(_buffer, buffer_s8);
 		var dir = buffer_read(_buffer, buffer_u16);
 		var gunId = buffer_read(_buffer, buffer_u8);
 		var gunImgIndex = buffer_read(_buffer, buffer_u8);
@@ -39,6 +40,7 @@ switch (_message_id)
 		obj_clientPlayer.sprite_index = scr_system_spriteId(false, spriteId);
 		obj_clientPlayer.image_index = img;
 		obj_clientPlayer.image_xscale = xScale;
+		obj_clientPlayer.image_yscale = yScale;
 		obj_clientPlayer.gunDirection = dir;
 		obj_clientPlayer.gunId = gunId;
 		obj_clientPlayer.gunImageIndex = gunImgIndex;
@@ -70,6 +72,7 @@ switch (_message_id)
 		obj.applySlowing = obj_clientPlayer.gunBulletApplySlowing;
 		obj.slowingDuration = obj_clientPlayer.gunBulletSlowingDuration;
 		obj.ricochet = obj_clientPlayer.gunBulletRicochet;
+		obj.knockback = obj_clientPlayer.gunKnockback;
 		break;
 		
 	case 3:
@@ -107,6 +110,9 @@ switch (_message_id)
 		var obj = instance_create_layer(posX, posY, "Instances", obj_playerCorpse);
 		obj.sprite_index = scr_system_spriteId(false, spriteId);
 		obj.image_xscale = xScale;
+		
+		// Spawn the soulOrb
+		instance_create_layer(posX, posY, "Items", obj_soulOrb);
 		break;
 		
 	case 7:

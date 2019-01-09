@@ -33,6 +33,7 @@ clientId = 0;
 
 // Keep track of if the match is full
 matchIsFull = false;
+matchIsActive = false;
 matchIsWon = false;
 winner = 0;
 

@@ -6,11 +6,12 @@ if (((iAttack && !gunIsAutomatic) or (iAttackHold && gunIsAutomatic)) && alarm[2
 	// Set the gunImageIndex to match the shooting image
 	gunImageIndex = 1;
 
+	var dir = point_direction(x, y, mouse_x, mouse_y);
+
 	// Instantiate a bullet and set its direction to face towards the mouse
 	for (var i = 0; i < gunBulletAmount; i++)
 	{
 		var obj = instance_create_layer(x, y, "Bullets", obj_bullet);
-		var dir = point_direction(x, y, mouse_x, mouse_y);
 		var offset = random_range(-gunAccuracy, gunAccuracy);
 		
 		obj.direction = dir + offset;
@@ -24,10 +25,18 @@ if (((iAttack && !gunIsAutomatic) or (iAttackHold && gunIsAutomatic)) && alarm[2
 		obj.applySlowing = gunBulletApplySlowing;
 		obj.slowingDuration = gunBulletSlowingDuration;
 		obj.ricochet = gunBulletRicochet;
+		obj.line = gunBulletLine;
+		obj.knockback = gunKnockback;
 		
 		// Buffer
 		scr_buffer_player_attack(obj.direction);
 	}
+	
+	audio_play_sound(aud_machineGun, 0, false);
+	
+	// Apply knockback to the player
+	knockbackX = lengthdir_x(gunRecoil, dir + 180);
+	knockbackY = lengthdir_y(gunRecoil, dir + 180);
 	
 	// Make the camera shake
 	obj_cameraPlayer.shakeIntensity = gunShakeIntensity;

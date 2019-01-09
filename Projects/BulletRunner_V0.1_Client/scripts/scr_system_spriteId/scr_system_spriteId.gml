@@ -68,6 +68,14 @@ if (_getId)
 		case spr_ricochetGun_dropped:
 			return 14;
 			break;
+			
+		case spr_jack_fall:
+			return 15;
+			break;
+			
+		case spr_jack_dab:
+			return 16;
+			break;
 	}
 }
 else
@@ -132,6 +140,14 @@ else
 			
 		case 14:
 			return spr_ricochetGun_dropped;
+			break;
+			
+		case 15:
+			return spr_jack_fall;
+			break;
+			
+		case 16:
+			return spr_jack_dab;
 			break;
 	}
 }

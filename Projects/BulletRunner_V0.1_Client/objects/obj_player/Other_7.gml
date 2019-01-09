@@ -54,3 +54,9 @@ if (playerState == "DIE")
 	
 	playerState = "DEFAULT";
 }
+
+if (playerState == "DAB")
+{
+	audio_stop_sound(aud_dab);
+	playerState = "DEFAULT";
+}

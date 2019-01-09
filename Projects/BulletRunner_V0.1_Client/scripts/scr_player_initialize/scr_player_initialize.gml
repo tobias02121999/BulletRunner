@@ -33,6 +33,8 @@ reelPositionY = 0;
 reelSpeed = 8;
 isSlowed = false;
 portalTimer = 0;
+knockbackX = 0;
+knockbackY = 0;
 
 // Initialize the player gun variables
 gunId[0] = 1;
@@ -70,7 +72,10 @@ gunBulletReelOnDestroy = false;
 gunBulletApplySlowing = false;
 gunBulletSlowingDuration = 0;
 gunBulletRicochet = false;
+gunBulletLine = false;
 gunShakeIntensity = 0;
+gunRecoil = 0;
+gunKnockback = 0;
 
 // Initialize the player statistics variables
 movementSpeed = 0;

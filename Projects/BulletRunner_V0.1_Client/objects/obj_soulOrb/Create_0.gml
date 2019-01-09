@@ -1,0 +1,2 @@
+// 
+hpPercentage = .1;

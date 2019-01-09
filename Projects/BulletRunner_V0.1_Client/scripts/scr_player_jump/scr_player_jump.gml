@@ -12,4 +12,7 @@ if (iJump && isMoving)
 	
 	// Update the playerState (either doding or leaping > enhanced dodge)
 	playerState = "JUMP";
+	
+	if (!audio_is_playing(aud_dash))
+		audio_play_sound(aud_dash, 0, false);
 }

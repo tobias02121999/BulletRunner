@@ -5,12 +5,18 @@ if (playerState == "DODGE" or playerState == "LEAP")
 {
 	sprite_index = spr_jack_dodge;
 	drawGun = true;
+	
+	// Spawn ghosts
+	instance_create_layer(x, y, "Instances", obj_ghost);
 }
 
 if (playerState == "SLIDE")
 {
 	sprite_index = spr_jack_slide;
 	drawGun = true;
+	
+	// Spawn ghosts
+	instance_create_layer(x, y, "Instances", obj_ghost);
 }
 	
 if (playerState == "CROUCHING")
@@ -23,12 +29,18 @@ if (playerState == "JUMP")
 {
 	sprite_index = spr_jack_jump;
 	drawGun = false;
+	
+	// Spawn ghosts
+	instance_create_layer(x, y, "Instances", obj_ghost);
 }
 
 if (playerState == "REEL")
 {
 	sprite_index = spr_jack_slide;
 	drawGun = true;
+	
+	// Spawn ghosts
+	instance_create_layer(x, y, "Instances", obj_ghost);
 }
 
 if (playerState == "DIE")
@@ -47,6 +59,17 @@ if (playerState == "FALL")
 {
 	sprite_index = spr_jack_fall;
 	drawGun = false;
+}
+
+if (playerState == "DAB")
+{
+	sprite_index = spr_jack_dab;	
+	drawGun = false;
+	obj_cameraPlayer.shakeIntensity = 5;
+	obj_cameraPlayer.alarm[0] = 5;
+	
+	if (!audio_is_playing(aud_dab))
+		audio_play_sound(aud_dab, 0, false);
 }
 
 if (playerState != "FALL")

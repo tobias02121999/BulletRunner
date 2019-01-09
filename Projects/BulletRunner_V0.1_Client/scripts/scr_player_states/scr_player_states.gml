@@ -97,4 +97,8 @@ switch (_playerState)
 		scr_player_fall(.05);
 		scr_player_reset();
 		break;
+		
+	case "DAB": //
+		scr_player_animation();
+		break;
 }

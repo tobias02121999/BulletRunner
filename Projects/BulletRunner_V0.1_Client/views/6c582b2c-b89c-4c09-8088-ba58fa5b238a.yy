@@ -11,7 +11,8 @@
         "85a110a2-4fec-4eec-8685-b8f70ae0099f",
         "3c944d2b-f6e8-42ad-b0e5-3d1ca6c05019",
         "e24015fd-46f5-4850-8498-6ad1d32b4d5f",
-        "535fbe5d-883a-42ca-92bf-0da4c41847b7"
+        "535fbe5d-883a-42ca-92bf-0da4c41847b7",
+        "f99bb67b-ffd4-48d8-bccf-c3df6e32dfbc"
     ],
     "filterType": "GMSprite",
     "folderName": "Holding",

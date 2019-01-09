@@ -31,6 +31,8 @@ switch (_gunId)
 		gunBulletApplySlowing = false;
 		gunDurabilityMax = 0;
 		gunShakeIntensity = 0;
+		gunRecoil = 0;
+		gunKnockback = 0;
 		break;
 	
 	case 0: // Machine Gun
@@ -50,8 +52,11 @@ switch (_gunId)
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = false;
+		gunBulletLine = false;
 		gunDurabilityMax = 100;
 		gunShakeIntensity = 2;
+		gunRecoil = 2;
+		gunKnockback = 1;
 		break;
 		
 	case 1: // Shotgun
@@ -71,8 +76,11 @@ switch (_gunId)
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = false;
+		gunBulletLine = false;
 		gunDurabilityMax = 15;
 		gunShakeIntensity = 6;
+		gunRecoil = 7.5;
+		gunKnockback = 8;
 		break;
 		
 	case 2: // RPG
@@ -92,10 +100,38 @@ switch (_gunId)
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = false;
+		gunBulletLine = false;
 		gunDurabilityMax = 10;
 		gunShakeIntensity = 12;
+		gunRecoil = 10;
+		gunKnockback = 5;
 		break;
-		
+	
+	case 3: // Sniper
+		gunSprite = spr_sniper;
+		gunResetAlarm = 3;
+		gunBulletAmount = 1;
+		gunAccuracy = 0;
+		gunRange = 30;
+		gunDamage = 15;
+		gunReloadDuration = 40;
+		gunIsAutomatic = false;
+		gunBulletSprite = spr_bullet;
+		gunBulletSpeed = 0;
+		gunBulletExplodeOnDestroy = false;
+		gunBulletDestroyOnMousePosition = false;
+		gunBulletDrawRope = false;
+		gunBulletReelOnDestroy = false;
+		gunBulletApplySlowing = false;
+		gunBulletRicochet = false;
+		gunBulletLine = true;
+		gunDurabilityMax = 8;
+		gunShakeIntensity = 3;
+		gunRecoil = 5;
+		gunKnockback = 0;
+		break;
+	
+	/*
 	case 3: // Grappling Gun
 		gunSprite = spr_grapplingGun;
 		gunResetAlarm = 3;
@@ -115,7 +151,10 @@ switch (_gunId)
 		gunBulletRicochet = false;
 		gunDurabilityMax = 3;
 		gunShakeIntensity = 3;
+		gunRecoil = 0;
+		gunKnockback = 0;
 		break;
+	*/
 		
 	case 4: // Plasma Rifle
 		gunSprite = spr_plasmaRifle;
@@ -135,8 +174,11 @@ switch (_gunId)
 		gunBulletApplySlowing = true;
 		gunBulletSlowingDuration = 5;
 		gunBulletRicochet = false;
+		gunBulletLine = false;
 		gunDurabilityMax = 75;
 		gunShakeIntensity = 3;
+		gunRecoil = 3;
+		gunKnockback = 0;
 		break;
 		
 	case 5: // Ricochet Gun
@@ -156,7 +198,10 @@ switch (_gunId)
 		gunBulletReelOnDestroy = false;
 		gunBulletApplySlowing = false;
 		gunBulletRicochet = true;
+		gunBulletLine = false;
 		gunDurabilityMax = 35;
 		gunShakeIntensity = 4;
+		gunRecoil = 2;
+		gunKnockback = 1;
 		break;
 }

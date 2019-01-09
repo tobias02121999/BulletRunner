@@ -29,6 +29,7 @@ gunBulletReelOnDestroy = false;
 gunBulletApplySlowing = false;
 gunBulletSlowingDuration = 0;
 gunBulletRicochet = false;
+gunKnockback = 0;
 drawGun = true;
 
 // Spawn the playerShadow

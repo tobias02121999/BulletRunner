@@ -1,8 +1,8 @@
 /// scr_force_applyForce()
 
-if (movementSpeedHorizontal > 0)
+if (movementSpeedHorizontal + knockbackX > 0)
 {
-	for (var i = movementSpeedHorizontal; i > 0; i--)
+	for (var i = movementSpeedHorizontal + knockbackX; i > 0; i--)
 	{
 		if (place_free(x + i, y))
 		{
@@ -12,9 +12,9 @@ if (movementSpeedHorizontal > 0)
 	}
 }
 
-if (movementSpeedHorizontal < 0)
+if (movementSpeedHorizontal + knockbackX < 0)
 {
-	for (var i = movementSpeedHorizontal; i < 0; i++)
+	for (var i = movementSpeedHorizontal + knockbackX; i < 0; i++)
 	{
 		if (place_free(x + i, y))
 		{
@@ -24,9 +24,9 @@ if (movementSpeedHorizontal < 0)
 	}
 }
 
-if (movementSpeedVertical > 0)
+if (movementSpeedVertical + knockbackY > 0)
 {
-	for (var i = movementSpeedVertical; i > 0; i--)
+	for (var i = movementSpeedVertical + knockbackY; i > 0; i--)
 	{
 		if (place_free(x, y + i))
 		{
@@ -36,9 +36,9 @@ if (movementSpeedVertical > 0)
 	}
 }
 
-if (movementSpeedVertical < 0)
+if (movementSpeedVertical + knockbackY < 0)
 {
-	for (var i = movementSpeedVertical; i < 0; i++)
+	for (var i = movementSpeedVertical + knockbackY; i < 0; i++)
 	{
 		if (place_free(x, y + i))
 		{

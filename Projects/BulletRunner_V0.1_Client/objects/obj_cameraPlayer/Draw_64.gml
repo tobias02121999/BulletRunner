@@ -39,8 +39,17 @@ else
 	// Draw the playerscores (together with their usernames) to the screen if the match has started
 	if (obj_client.matchIsFull)
 	{
-		draw_text(16, 16, obj_client.username + ": " + string(obj_client.matchScore));
-		draw_text(16, 32, obj_clientPlayer.username + ": " + string(obj_clientPlayer.matchScore));
+		if (round(countdown / 100) <= 0)
+		{
+			draw_text(16, 16, obj_client.username + ": " + string(obj_client.matchScore));
+			draw_text(16, 32, obj_clientPlayer.username + ": " + string(obj_clientPlayer.matchScore));
+			obj_client.matchIsActive = true;
+		}
+		else
+		{
+			draw_text(16, 16, "Match starts in " + string(round(countdown / 100)) + " . . .");
+			countdown -= 2;
+		}
 	}
 }
 
@@ -90,3 +99,6 @@ if (showWeaponReel)
 }
 else
 	mouseIsCentered = false;
+	
+draw_sprite_ext(spr_distortion, distortionIndex, 0, 0, image_xscale * 1.6, image_yscale * 1.6, 0, c_white, .05 + ((1 - obj_player.hp / obj_player.maxHp) / 2));
+draw_sprite_ext(spr_vignette, 0, 0, 0, image_xscale * 1.6, image_yscale * 1.6, 0, c_white, .05 + (1 - obj_player.hp / obj_player.maxHp));

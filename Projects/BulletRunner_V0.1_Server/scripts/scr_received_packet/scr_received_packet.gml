@@ -17,6 +17,7 @@ switch (_message_id)
 		var spriteId = buffer_read(_buffer, buffer_u8);
 		var img = buffer_read(_buffer, buffer_u8);
 		var xScale = buffer_read(_buffer, buffer_s8);
+		var yScale = buffer_read(_buffer, buffer_s8);
 		var dir = buffer_read(_buffer, buffer_u16);
 		var gunId = buffer_read(_buffer, buffer_u8);
 		var gunImgIndex = buffer_read(_buffer, buffer_u8);
@@ -35,6 +36,7 @@ switch (_message_id)
 		buffer_write(_buffer, buffer_u8, spriteId);
 		buffer_write(_buffer, buffer_u8, img);
 		buffer_write(_buffer, buffer_s8, xScale);
+		buffer_write(_buffer, buffer_s8, yScale);
 		buffer_write(_buffer, buffer_u16, dir);
 		buffer_write(_buffer, buffer_u8, gunId);
 		buffer_write(_buffer, buffer_u8, gunImgIndex);

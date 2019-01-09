@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_bloodSpat",
     "eventList": [
-        
+        {
+            "id": "8c76d87b-0b16-487f-9ce8-7c1008e88503",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "65f276eb-f9be-4c46-b308-027905dba47a"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

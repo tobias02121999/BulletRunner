@@ -15,4 +15,7 @@ if (iDodge && isMoving)
 		playerState = "DODGE";
 	else
 		playerState = "LEAP";
+		
+	if (!audio_is_playing(aud_dash))
+		audio_play_sound(aud_dash, 0, false);
 }
