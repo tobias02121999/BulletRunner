@@ -26,3 +26,6 @@ portalTimer--;
 if (gunDurability[gunSlot] <= 0)
 	gunId[gunSlot] = -1;
 */
+
+// Set the player angle based on the horizontal player speed
+image_angle = -(obj_player.movementSpeedHorizontal + obj_player.knockbackX) * 2;
