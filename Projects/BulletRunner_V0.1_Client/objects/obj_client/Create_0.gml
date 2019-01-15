@@ -1,6 +1,6 @@
 // Initialize the client variables
 var type = network_socket_tcp;
-var ip = "92.108.156.76";
+var ip = "10.3.21.137";
 var port = 8000;
 
 // Set the network config

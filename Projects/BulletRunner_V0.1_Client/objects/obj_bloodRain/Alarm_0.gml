@@ -5,7 +5,7 @@ for (i = 0; i < rand; i++)
 	var posX = random_range(x - spawnRadiusXfrom, x + spawnRadiusXto);
 	var posY = random_range(y - spawnRadiusYfrom, y + spawnRadiusYto);
 	
-	var obj = instance_create_layer(posX, posY, "BloodRain", obj_bloodDrop);
+	var obj = instance_create_layer(posX, posY, "BloodDrops", obj_bloodDrop);
 	obj.fallDistance = height;
 }
 

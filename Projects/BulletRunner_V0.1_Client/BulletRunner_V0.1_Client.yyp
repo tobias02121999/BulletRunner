@@ -1000,6 +1000,14 @@
             }
         },
         {
+            "Key": "a1c61e87-c139-43fa-b962-db38f5182bc8",
+            "Value": {
+                "id": "fa2ebc46-d6d6-4922-b62e-a57ec33f56f0",
+                "resourcePath": "sprites\\spr_cloud\\spr_cloud.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a3a5d98f-3043-499f-b428-98eafdbb9113",
             "Value": {
                 "id": "40e9f53c-6c15-4842-8677-c6aa52ae54a8",
